@@ -1,0 +1,12 @@
+{
+  "name": "shadow-scrape",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "deepl-node": "^1.8.0",
+    "dotenv": "^16.0.3",
+    "puppeteer": "^19.6.2"
+  }
+}

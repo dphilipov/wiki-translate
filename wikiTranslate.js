@@ -6,10 +6,10 @@ import { constants } from './constants.js';
 const translator = new deepl.Translator(constants.AUTH_KEY);
 
 export async function wikiTranslate() {
-  console.log('asd');
   for (let articleTitle of constants.ARTICLE_TITLES) {
     let [pageTitle, pageContent] = await getArticleContent(articleTitle);
 
+    // If the page is a redirect, fetch the content of the new page
     if (pageContent.includes('redirect')) {
       const redirectPageTitle = pageContent.match(/\[\[(.*?)\]\]/)[1];
       [pageTitle, pageContent] = await getArticleContent(redirectPageTitle);

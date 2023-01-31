@@ -1,16 +1,17 @@
-import puppeteer from 'puppeteer';
+import fetch from 'node-fetch';
 import * as fs from 'fs/promises';
 import { constants } from '../constants.js';
 
 (async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
+  const params = {
+    action: 'query',
+    list: 'allpages',
+    format: 'json',
+    aplimit: 'max',
+  };
 
-  const response = await page.goto(
-    'https://www.shadowiki.de/api.php?action=query&format=json&list=allpages&aplimit=500',
-    {
-      waitUntil: ['domcontentloaded', 'networkidle0'],
-    }
+  const response = await fetch(
+    `${constants.WIKI_URL}?${new URLSearchParams(params)}`
   );
 
   const jsonResponse = await response.json();
@@ -22,6 +23,4 @@ import { constants } from '../constants.js';
     `${constants.INPUT_FOLDER}/articles.js`,
     JSON.stringify(allPages)
   );
-
-  await browser.close();
 })();

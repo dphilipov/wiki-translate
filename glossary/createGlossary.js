@@ -2,7 +2,7 @@ import * as deepl from 'deepl-node';
 import { constants } from '../constants.js';
 import { glossary } from './glossary.js';
 
-(async () => {
+export async function createGlossary() {
   const translator = new deepl.Translator(constants.AUTH_KEY);
   const entries = new deepl.GlossaryEntries({
     entries: glossary,
@@ -16,4 +16,4 @@ import { glossary } from './glossary.js';
   );
 
   console.log(glossaryDEtoEN.glossaryId);
-})();
+}

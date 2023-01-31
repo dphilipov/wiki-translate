@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import * as fs from 'fs/promises';
 import { constants } from '../constants.js';
 
-(async () => {
+export async function getArticles() {
   const params = {
     action: 'query',
     list: 'allpages',
@@ -23,4 +23,4 @@ import { constants } from '../constants.js';
     `${constants.INPUT_FOLDER}/articles.js`,
     JSON.stringify(allPages)
   );
-})();
+}

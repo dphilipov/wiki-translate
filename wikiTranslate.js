@@ -61,7 +61,7 @@ async function saveOriginalArticle(pageTitle, pageContent) {
     `${constants.OUTPUT_FOLDER}/${pageTitle}-original.txt`,
     pageContent
   );
-  console.log(`File: ${pageTitle}-de.txt saved.`);
+  console.log(`File: ${pageTitle}-original.txt saved.`);
 }
 
 async function translateAndSaveArticle(pageTitle, pageContent) {

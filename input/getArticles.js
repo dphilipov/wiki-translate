@@ -3,24 +3,37 @@ import * as fs from 'fs/promises';
 import { constants } from '../constants.js';
 
 export async function getArticles() {
-  const params = {
-    action: 'query',
-    list: 'allpages',
-    format: 'json',
-    aplimit: 'max',
-  };
+  let queryContinue = '';
+  let data = [];
 
-  const response = await fetch(
-    `${constants.WIKI_URL}?${new URLSearchParams(params)}`
-  );
+  while (true) {
+    const params = {
+      action: 'query',
+      list: 'allpages',
+      format: 'json',
+      aplimit: 'max',
+      apcontinue: queryContinue,
+    };
 
-  const jsonResponse = await response.json();
-  console.log(jsonResponse);
+    const response = await fetch(
+      `${constants.WIKI_URL}?${new URLSearchParams(params)}`
+    );
 
-  const allPages = jsonResponse.query.allpages;
+    const jsonResponse = await response.json();
+
+    const articles = jsonResponse.query.allpages;
+    data = [...data, ...articles];
+
+    if (!jsonResponse['query-continue']) {
+      break;
+    }
+
+    queryContinue = jsonResponse['query-continue'].allpages.apcontinue;
+    console.log(queryContinue);
+  }
 
   await fs.writeFile(
     `${constants.INPUT_FOLDER}/articles.json`,
-    JSON.stringify(allPages)
+    JSON.stringify(data)
   );
 }

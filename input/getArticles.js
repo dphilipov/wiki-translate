@@ -31,12 +31,14 @@ export async function getArticles() {
     queryContinue = jsonResponse['query-continue'].allpages.apcontinue;
   }
 
-  await fs.writeFile(
-    `${constants.INPUT_FOLDER}/articles.json`,
-    JSON.stringify(data)
-  );
+  // Adds an index to each article
+  data = data.map((x, i) => {
+    x.index = i;
 
-  console.log(
-    `${data.length} articles saved to ${constants.INPUT_FOLDER}/articles.json`
-  );
+    return x;
+  });
+
+  await fs.writeFile('input/articles.json', JSON.stringify(data));
+
+  console.log(`${data.length} articles saved to input/articles.json`);
 }

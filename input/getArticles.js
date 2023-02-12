@@ -29,11 +29,14 @@ export async function getArticles() {
     }
 
     queryContinue = jsonResponse['query-continue'].allpages.apcontinue;
-    console.log(queryContinue);
   }
 
   await fs.writeFile(
     `${constants.INPUT_FOLDER}/articles.json`,
     JSON.stringify(data)
+  );
+
+  console.log(
+    `${data.length} articles saved to ${constants.INPUT_FOLDER}/articles.json`
   );
 }

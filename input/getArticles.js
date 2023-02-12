@@ -20,7 +20,7 @@ export async function getArticles() {
   const allPages = jsonResponse.query.allpages;
 
   await fs.writeFile(
-    `${constants.INPUT_FOLDER}/articles.js`,
+    `${constants.INPUT_FOLDER}/articles.json`,
     JSON.stringify(allPages)
   );
 }

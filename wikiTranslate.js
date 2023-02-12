@@ -6,22 +6,29 @@ import { constants } from './constants.js';
 const translator = new deepl.Translator(constants.AUTH_KEY);
 
 export async function wikiTranslate() {
-  for (let articleTitle of constants.ARTICLE_TITLES) {
-    let [pageTitle, pageContent] = await getArticleContent(articleTitle);
+  try {
+    const articlesToTranslate = constants.ARTICLE_TITLES.length
+      ? constants.ARTICLE_TITLES
+      : constants.ARTICLE_TITLES_RANGE;
 
-    // If the page is a redirect, fetch the content of the new page
-    if (pageContent.includes('redirect')) {
-      const redirectPageTitle = pageContent.match(/\[\[(.*?)\]\]/)[1];
-      [pageTitle, pageContent] = await getArticleContent(redirectPageTitle);
+    for (let articleTitle of articlesToTranslate) {
+      let [pageTitle, pageContent] = await getArticleContent(articleTitle);
+
+      // If the page is a redirect, fetch the content of the new page
+      if (pageContent.includes('redirect')) {
+        const redirectPageTitle = pageContent.match(/\[\[(.*?)\]\]/)[1];
+        [pageTitle, pageContent] = await getArticleContent(redirectPageTitle);
+      }
+
+      saveOriginalArticle(pageTitle, pageContent);
+
+      // If NO_TRANSLATE is true, skip the translation and save only the original content
+      if (!constants.NO_TRANSLATE) {
+        translateAndSaveArticle(pageTitle, pageContent);
+      }
     }
-
-    saveOriginalArticle(pageTitle, pageContent);
-
-    if (constants.NO_TRANSLATE) {
-      return;
-    }
-
-    translateAndSaveArticle(pageTitle, pageContent);
+  } catch (err) {
+    console.log(err);
   }
 }
 
@@ -39,6 +46,10 @@ async function getArticleContent(articleTitle) {
 
   const jsonResponse = await response.json();
 
+  if (jsonResponse.error) {
+    throw new Error(`${articleTitle} -> ${jsonResponse.error.info}`);
+  }
+
   const pageTitle = jsonResponse.parse.title;
   const pageContent = jsonResponse.parse.wikitext['*'];
 
@@ -46,9 +57,12 @@ async function getArticleContent(articleTitle) {
 }
 
 async function saveOriginalArticle(pageTitle, pageContent) {
+  await fs.mkdir(`./${constants.OUTPUT_FOLDER}/`, { recursive: true });
+
   if (!constants.ALLOW_FILE_OVERWRITE) {
-    const files = await fs.readdir('./output/');
-    const fileExists = files.some(file => file === `${pageTitle}.txt`);
+    const files = await fs.readdir(`./${constants.OUTPUT_FOLDER}/`);
+
+    const fileExists = files.some(file => file === `${pageTitle}-original.txt`);
 
     if (fileExists) {
       console.log('File already exists.');

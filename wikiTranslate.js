@@ -78,9 +78,14 @@ async function saveOriginalArticle(pageTitle, pageContent) {
 }
 
 async function translateAndSaveArticle(pageTitle, pageContent) {
-  const result = await translator.translateText(pageContent, 'de', 'en-US', {
-    glossary: constants.GLOSSARY_ID,
-  });
+  const result = await translator.translateText(
+    pageContent,
+    constants.TRANSLATE_FROM_LANGUAGE,
+    constants.TRANSLATE_TO_LANGUAGE,
+    {
+      glossary: constants.GLOSSARY_ID,
+    }
+  );
 
   // Save the TRANSLATED version of the page content
   await fs.writeFile(`output/${pageTitle}.txt`, result.text);

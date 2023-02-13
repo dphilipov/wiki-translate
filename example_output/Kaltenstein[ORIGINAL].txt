@@ -1,0 +1,122 @@
+{{Person
+|BILD=Kaltenstein .jpg
+|COPYRIGHT='''Kaltenstein''' taucht aus der Nordsee auf <br/>{{C Fanpro|FanPro}}
+|ALTER_OVR=weit über 3.000 Jahre
+|GESCHLECHT=männlich
+|ART=[[Großer Drache|Großer]] [[Westlicher Drache]]
+|MAGISCH=magisches Wesen ([[Drache]])
+|NATION=[[Deutschland|deutsch]] / [[schweiz]]erisch ?
+}}
+{{Drache
+|FARBE=blau-grün-silberne Schuppen
+|Merkmale=wenn aus dem Wasser kommend <br/>oft schleimig vor Algen
+|FORM=[[Troll]] 
+|HORT=Feldberg im Schwarzwald
+|ERSCHEINEN=2012
+}}
+{{Infobox
+|TITEL=Kaltenstein in metamenschlicher Form
+|TEXT=[[Datei:Kaltenstein in seiner Troll-Gestalt.jpg|thumb|center|Kaltenstein in Troll-Form<br/>{{C Pegasus}}]]
+|CLEAR=right
+}}
+'''Kaltenstein''' ist ein [[Große Drachen|großer]] [[Westlicher Drache|westlicher]] [[Drache]] aus der [[Allianz Deutscher Länder|ADL]].
+
+==Biographie==
+Nach seinem Erwachen kam er {{Shx|2012}} in einen Konflikt mit [[Nebelherr]] und [[Lofwyr]]. Dies lag daran, dass die [[Bundeswehr]] den Drachen [[Feuerschwinge]] bis in die [[SOX]] verfolgte , wo sie abgeschossen wurde. Kaltenstein, der ihr über dem Ärmelkanal beizustehen versuchte, und ihr in die verstrahlte Zone folgen wollte, wurde von einem weiteren Drachen, [[Nebelherr]], daran gehindert. Es kam über [[Frankfurt am Main|Frankfurt]] zu einem Luftkampf zwischen den Drachen, den Nebelherr beinahe verloren hätte, wenn ihm nicht [[Lofwyr]] zur Hilfe gekommen wäre. Der Luftkampf verlagerte sich nach Süden, und gemeinsam bezwangen die beiden Kaltenstein, der in der Folge im Schwarzwald untergetaucht sein soll {{Ref|1}}. 
+{{shadowtalk|Schwerverletzt abgeschmiert und wie ein Meteor im Tannenforst eingeschlagen trifft es besser... {{Ref|1}}|'''''[[Arvenger '49]]'''''|62%}}
+Viele glaubten, dass er dabei ums Leben gekommen sei, was aber ein Trugschluss war {{Ref|2}}.
+
+Nach seiner ersten Sichtung 2012 unterstützte Kaltenstein angeblich in den Jahren {{Shx|2017}}-{{Shx|2020}} mehrere Projekte von [[BUND]] und [[GreenWar]]. Weiter heißt es, er sei am {{Shx|13._März|13.03.}}{{Shx|2021}} schleimig vor Algen aus der [[Nordsee]] aufgetaucht, und habe mehrere Schiffe im Hafen von [[Bremen]] beschädigt, ehe er nach Hamburg weiterflog, wo er weitere Schiffe versenkte und den [[Hamburger Ölhafen|Ölhafen]] zerstörte. Dies war - Gerüchten zu Folge - seine Reaktion auf den Beschluss der Nordseekonferenz, die Nordsee entgültig als verseucht aufzugeben {{Ref|3}}. Später dann soll er mit Gold aus seinem Hort (bzw. aus Schiffswracks auf dem Grund der Nordsee) den Bau des [[Altsterpalast]]s mit dem imposanten Turm des [[Nixenhotel]]s finanziert und die [[Nixenbar]] in [[Hamburg]] erworben haben, auch wenn offiziell nicht er sondern die [[Nixe Betriebsgesellschaft m.b.H.]] als Eigentümer firmiert.
+
+===Trollkriege===
+Es wird vermutet, dass Kaltenstein hinter den Kulissen stark in die [[Trollkriege]], in denen die süddeutschen [[Troll]]e für ihr eigenes Land kämpften, verwickelt war. So formierte sich unter der Anleitung des Großdrachend das [[Trollthing]] und diente König [[Berthold I.]] als magische Unterstützung während der Schlachten. Es wird vermutet, dass die Animisten unter Anleitung des trollischen [[Druide]]n [[Vosegus]] (von vo-sego, ''die große Kraft'') und unter Anleitung von Kaltenstein die Erdbeben im Oberrheingraben auslösten, in deren Folge die Vulkane der [[Eifel]] ausbrachen und [[Karlsruhe]] zerstörten. Weiterhin wird auch vermutet, dass Kaltenstein nicht nur die Gruppe begründete, sondern auch die ursprüngliche, rohe [[Magische Tradition]] des [[Trollschamanismus]] erschuf {{Ref|4}}.
+
+Kaltenstein zerstörte zudem {{Shx|2038}} den [[Zeppelin]] &bdquo;Lothar Späth&ldquo; über dem Schwarzwald. {{Shx|2044}} war er einer der Großdrachen, die an dem berüchtigten Formationsflug über [[München]] und [[Stuttgart]] beteiligt waren, der die Regierung Hunggarten des [[Süddeutscher Bund|Süddeutschen Bundes]] zur Abdankung zwang.
+
+Kaltensteins [[Drachenhort|Hort]] soll sich am Feldberg im Schwarzwald befinden, aber er zog sich {{Shx|2062|'62}} offenbar aus dem Trollkönigreich zurück, und gab damit diese Machtbasis auf. Angeblich hat ein Konzernteam nach seinem (und Bertholds) Verschwinden versucht, den Hort zu plündern, aber das Trollkönigreich (und später die Trollrepublik) lässt diesen sehr scharf bewachen. 
+
+===Drohung gegen die Schweiz===
+Nach dem die illegalen Sterilisierungsexperimente der [[GENOM Corporation]] in [[Basel]] an [[Metamenschen]] bekannt geworden waren, drohte Kaltenstein massiv der [[SEg]] und soll aktiv gegen den Kon vorgegangen sein. Er traf sich außerdem angeblich mit hochrangigen Vertretern der Kommission für Metamenschenreichte der [[UNO]] in [[Genf]]. Vermutlich hält er sich seither in  der [[Schweiz]]er [[Alpeninterdiktszone]] auf {{Ref|5}} {{Ref|6}}.
+
+===Drachenbürgerkrieg===
+Während des [[Drachenbürgerkrieg]]s Mitte der {{Shx|2070er}} bewahrte er Neutralität, und lehnte das Ansinnen [[Alamais]]', ihn für sein Lager der ''Rebellen'' zu vereinnahmen, strikt ab. Bei der auf Alamais' Tod in [[GeMiTo]] folgenden [[Drachenversammlung]] nahm er zwar teil, enthielt sich jedoch der Stimme {{Ref|7}}.
+
+Im Juni {{Shx|2079}} zerstörte er eine [[Drohne]] der [[württemberg]]ischen [[Landwehr]], die diese gegen Trollextremisten einsetzen wollte, welche die Region Triberg besetzt haben. Da er anschließend jedoch nicht die Landwehr-Truppen selbst angriff, sondern nach Triberg flog, und dort landete, will er mit seiner Aktion möglicherweise Verhandlungsbereitschaft erzwingen.
+
+==Agenda==
+Als Begründer und Schirmherr des [[Trollkönigreich Schwarzwald|Trollkönigreichs Schwarzwald]] ist er schon lange daran interessiert, die Metanation zu schützen {{Ref|8}}
+
+Der Name des Großen Drachen ist immer wieder Teil vieler Schattendiskussionen, bei denen es darum geht, dass er wohl metamenschliche Rechte sichern möchte und gleichzeitig toxische Gefahren beseitigen will. Gemäß einiger Gerüchte scheint er ein anhaltendes Interesse an der [[SOX]] zu haben, was mit seiner Abneigung gegenüber [[Toxischer Magie]] zusammenhängt. Vermutlich lässt sich dies auf das Jahr {{Shx|2012}} zurückführen {{Ref|2}}. {{Shx|2078}} will man ihn vermehrt über der SOX fliegen gesehen haben.
+
+==Erscheinungsbild==
+Kaltenstein hat blau-grün-silberne Schuppen und wird auch als Wasserdrache bezeichnet. Er ist physisch sogar noch größer, als Lofwyr, und weist - auf Grund einer Verletzung, die er bei seinem Absturz im Schwarzwald erlitt - ein steifes Bein auf.
+
+===Metamenschliche Form===
+In [[metamensch]]licher Form ist Kaltenstein ein beeindruckender, alter [[Troll]]-[[Magier]] respektive -[[Hexer]] mit weißem Vollbart und langem, weißen Haar sowie meergrünen Augen. Das Merkmal des Hinkens zeichnet ihn auch in Trollgestalt aus, weshalb man ihn da nie ohne extrem massiven Gehstock sieht. In Gestalt als Troll ist er 2,65 m groß und 350 kg schwer.
+
+==Beziehungen==
+===Berthold I.===
+Über die Natur von Kaltensteins Pakt oder Allianz mit dem inzwischen verschollenen und für Tod erklärten Trollkönig Berthold existieren diverse Spekulationen, aber keinerlei gesicherte Fakten. Einzelne Verschwörungstheoretiker wie der Shadowland-User "[[Panic!]]" haben in [[Schattenland]]-Boards sogar schon gemutmaßt, der [[Troll]] wäre der Große Drache in [[Metamenschheit|metamenschlicher]] Gestalt. - Dies scheint jedoch wenig glaubhaft {{Ref|9}}.
+
+===Hans Bruhl===
+Eine Verbindung soll auch zwischen Kaltenstein und [[Hans Bruhl]], einem [[Magisches Wunderkind|magischen Wunderkind]] aus der Nähe des Schwarzwaldes, existieren. Der junge Mann tauchte praktisch aus dem Nichts an der [[Universität zu Köln]] auf und machte in der Rekordzeit von zwei Jahren seinen Doktor in [[Magietheorie]], schloss sich der [[Doktor Faustus Gesellschaft]] an und setzte sich gegen die Verschmutzung des Rheins durch die [[Konzerne]] ein. In der Folge wurde er zum Politaufsteiger innerhalb der [[USPD]]. Nach Informationen eines [[Magiedetektiv]]s namens [[Marcel Black]], die in der [[Schattenmatrix]] verbreitet wurden, hat Bruhl womöglich sieben Jahre in der Obhut Kaltensteins verbracht {{Ref|10}}.
+
+===Monika Stüeler-Waffenschmidt===
+[[Monika Stüeler-Waffenschmidt]], CEO des [[Frankfurter Bankenverein]]s, [[Drake]] und Ziehtochter von [[Nachtmeister]], hatte sich in der Vergangenheit im wahrsten Sinne des Wortes ein Blaues Auge von Kaltenstein eingefangen, vermutlich als sie auf der Suche nach einem neuen Lehrmeister war {{Ref|11}}.
+
+===Anderen Drachen===
+[[Feuerschwinge]] war zu Lebzeiten die Gefährtin Kaltensteins, und ihr Verlust soll dem Großdrachen näher gegangen sein, als man dies bei diesen an sich einzelgängerischen und territorialen Kreaturen erwarten würde. Dass sie in der [[SOX]] abstürzte, hat bei Kaltenstein zu einem anhaltenden und zeitweilig geradezu ungesunden Interesse an der radioaktiv verseuchten Sperrzone geführt. 
+
+Kaltensteins Verhältnis zu [[Lofwyr]] ist - nicht nur wegen des Drachenkampfes über [[Frankfurt am Main|Frankfurt]] im Jahr {{Shx|2012}} und Lofwyrs Rolle als [[Saeder-Krupp|S-K]]-[[CEO]] und damit Verantwortlicher eines der größten europäischen Umweltverschmutzer - ziemlich angespannt. Abgesehen von der vermuteten, gemeinsamen Aktion des "Drachenflugs" über [[Stuttgart]] und [[München]], die das Ende des [[Süddeutscher Bund|Süddeutschen Bundes]] besiegelte, gibt es keine Anzeichen von Kooperation zwischen beiden Großdrachen. Vor allem anderen scheint Kaltenstein Big Ls Engagement in der Trollrepublik nach Kaltensteins Rückzug nicht gut zu heißen, und hat ihm wohl eine eindeutige Botschaft zukommen lassen, sich dort mehr zurückzuhalten. 
+
+Wegen der angespannten Beziehungen Kaltensteins zu Lofwyr glaubte [[Alamais]] scheinbar, den Großdrachen im Zuge des [[Drachenbürgerkrieg|Drachenkonflikts]] in den {{Shx|2070er|2070ern}} in sein Lager ziehen zu können. Er suchte ihn deshalb persönlich in den Schweizer Alpen auf, ohne Kaltenstein jedoch zur Aufgabe seiner Neutralität bewegen zu können. 
+
+Der in [[Seattle]] lebende [[Drache]] [[Kalanyr]] war angeblich früher ein Protegeé und Vasall Kaltensteins, und möglicher Weise sogar ein direkter Nachkomme des deutschen Großdrachen. In [[Redmond]] und dort im speziellen in [[Glow City]] forschte er - wohl im Auftrag Kaltensteins - nach potentiellen Wegen zur Reinigung der SOX, verfolgt aber mittlerweile wohl nur noch seine eigene Agenda. Es bleibt abzuwarten, ob Kaltenstein irgendwann Maßnahmen ergreifen wird, um ihn an seine Pflichten zu erinnern.
+{{Großdrachen}}
+
+==Quellen==
+Dieser Artikel basiert auf dem Artikel {{Shx|Kaltenstein}} in der {{Shx|Hauptseite|Shadowhelix}}, wo er unter [[GNUFDL]] steht. Eine Liste der Autoren findet sich <span class="plainlinks">[http://wiki.shadowhelix.de/index.php?title=Kaltenstein&action=history hier]</span>.
+
+'''Weitere Quellen zu <u>Kaltenstein</u> sind:'''<br/>
+<u>Quellenbücher:</u>
+* [[Deutschland in den Schatten]] S.86-87
+* [[Deutschland in den Schatten II]], S.18, 30, 233-234
+* [[Shadows of Europe]] p.53, 233 / [[Europa in den Schatten]]
+* [[Survival of the Fittest]] p.5 / [[Fressen oder gefressen werden]] 
+*{{Qfc|4}} [[Dragons of the Sixth World]], p.105, 165, 166, 168 / [[Drachen der 6. Welt]], S.166 
+* [[Loose Alliances]] p.9, 95 / [[Feind meines Feindes]] S.95-96
+* [[Sixth World Almanac]] p.23, 143 / [[Almanach der Sechsten Welt]] S.22
+*{{Qfc|2}} [[Running Wild]] p.76 Tabelle, 78 / [[Wildwechsel - Das Critterdossier]] S.84 (Tabelle), 86
+* [[Reiseführer in die deutschen Schatten]] S.7, 34, 35
+* [[Straßenlegenden]] S.140-143
+* [[Machtspiele - Handbuch für Spione]] S.146
+* [[The Clutch of Dragons]] (?) / [[Drachenbrut (Quellenbuch)|Drachenbrut]]
+* [[Sturmfront]] S.13 (deutsche Zusammenfassung des englischen "Storm Front")
+* [[Datapuls: ADL]] S.14, 27, 64, 67
+* [[Datapuls: Hamburg]] S.13
+
+<u>Romane:</u>
+*[[Der vitruvianische Moment]]
+
+<u>Sonstige:</u>
+* [[Shadowrun Die 6. Welt]] - Shadowrun Reader, "Mächte der 6. Welt: Drachen" S.198
+* [[NovaPuls#2079-06-25|Extrapuls 15]] - 2079-06-25 "Kaltenstein attackiert Landwehr"
+
+===Quellendetails:===
+{{Ref2|1}} [[Dragons of the Sixth World]] p.166, 168
+{{Ref2|2}} [[Wildwechsel: Das Critterdossier]] S.86
+{{Ref2|3}} [[Deutschland in den Schatten II]] S.234
+{{Ref2|4}} [[Reiseführer in die deutschen Schatten]] S.34
+{{Ref2|5}} [[Shadowrun - Die 6. Welt]] S.198 - "Mächte der 6. Welt: Drachen"
+{{Ref2|6}} [[Shadows of Europe]] p.233
+{{Ref2|7}} [[Sturmfront]] S.13
+{{Ref2|8}} [[Reiseführer in die deutschen Schatten]] S.35
+{{Ref2|9}} [[Sixth World Almanac]] S. 143
+{{Ref2|10}} [[Feind meines Feindes]] S.95f (eV: p.95)
+{{Ref2|11}} [[Datapuls: ADL]] S.27
+{{Ref2|12}} [[Datapuls: ADL]] S.84
+
+===Widersprüche:===
+Laut "[[Datapuls: Hamburg]]" (S.13) stieg er am {{Shx|19._Mai|19. Mai}} aus der Nordsee. Dabei kann es sich um einen Schreibfehler handeln, da das ältere "[[Deutschland in den Schatten II]]" (S.234) den {{Shx|29._Mai|29. Mai}} nennt. Das ältere Werk erhält an dieser Stelle Vorrang.
+
+{{KatSort|cat=Personen|NSC|Drachen|Westliche Drachen|Große Drachen|Terroristen|Ökoterroristen|ADL|Schweizer}}

@@ -1,0 +1,387 @@
+Als '''Cyberware''' (auch: '''Cyberimplantate''', ugs.: ‎'''Chrom''', '''Drähte''') bezeichnet man anorganische, technische [[Augmentierungen]], die aus medizinischen Gründen, weit häufiger aber zur Verbesserung oder Erweiterung der körperlichen und geistigen Fähigkeiten in den Körper implantiert werden. Cyberware-Implantate können in komplexer Wechselwirkung mit dem Körper stehen. Das Beispiel einer Cyberhand, die heute die Interaktion mit den motorischen Nerven spielend meistert, zeigt die großen Fortschritte auf dem Gebiet der {{WP|Medizinische_Kybernetik|Medizinischen Kybernetik}}, von deren Namen sich Cyberware auch ableitet, seit ihrem bescheidenen Beginn als Idee in den Science Fiction-Romanen des vorigen Jahrhunderts. 
+
+Neben [[Menschen]] und [[Metamenschen]] werden auch [[Critter|Paracritter]] und Tiere mit Cyberware ausgestattet, was letztlich zu den programm- oder ferngesteuerten [[Biodrohnen]] führt.
+
+==Geschichte==
+Obwohl erste einfache Prothesen schon 2000 Jahre vor Christi Geburt hergestellt wurden, und zur letzten Jahrtausendwende schon Herzschrittmacher und Prothesen die sich durch Muskelkontraktionen bewegen ließen nichts besonderes waren, war es noch ein weiter Weg bis zur aktuellen Cyberware. 
+
+Manche Historiker beginnen die Geschichte der Cyberware {{shx|1982}}, mit dem erfolgreichen Einsetzen einer Herzersatzpumpe namens {{WPE|Artificial_heart#First_clinical_applications_of_a_permanent_pneumatic_total_artificial_heart|Jarvic-7}} in einen [[Norm|menschlichen]] Patienten. Vielen ist dieses Herz - das alles andere als ein Erfolg der Medizin war - allerdings noch zu primitiv. 
+
+Die Prothese, die allgemein als das erste echte Cyberware-Implantat der Geschichte gilt, wurde {{Shx|2019}} von der [[Transys Neuronet|Transys Corporation]] hergestellt. Sie ersetzte die linke Hand der professionellen Violinistin [[Leonora Bartoli]]. Diese neuartige Handprothese wurde direkt mit dem Nervensystem der Patientin verbunden und ließ sich somit wie eine normale Hand benutzen. Der Cyberwareboom begann, und schnell begannen alle größeren [[Konzerne]] in die Cyberwareforschung einzusteigen. Bis heute ist die Cyberwareforschung einer der am stärksten umkämpften Forschungsbereiche überhaupt.
+
+Mit der Zeit wurde Cyberware  gesellschaftlich mehr und mehr akzeptiert, und in manchen Kreisen galt Chrom, wie es oft genannt wird, sogar als chic, wobei das stark vom kulturellen Kontext abhing. In den {{shx|2050ern}} war Cyberware zu einer Grundvoraussetzung in vielen Sicherheits- und Militärberufen geworden. Es gab allerdings erheblichen Gegenwind gegen vom Arbeitgeber vorgeschriebene Vercyberung, und {{shx|2050}} verlor die [[Lone Star|Lone Star Security Services Corporation]] einen vielbeachteten Prozess gegen die Vorgabe, jeder Lone Star-Mitarbeiter müsse sich ein Smartlink implantieren lassen.
+
+Dennoch, wirklich aufhalten konnte das Cyberware nicht, weder im breiten Konsumentenbereich, noch in den viel spezialisierteren (und teureren) Sicherheits- und Militärbereichen. In den {{shx|2060ern}} verlor Cyberware nach und nach den Ruch des neuen, Radikalen, Gewöhnung setzte ein, und erst [[Bioware]] dann [[Genware]], dann [[Nanoware]] wurden das neue, heiße Ding über das alle kontrovers diskutierten. 
+
+Heute ist Cyberware längst ein Fakt des Lebens. Sie ist nach wie vor synonym für [[Augmentierungen]], auch wenn sie längst nicht mehr das ist, über das viel gesprochen wird. Kleinere [[Augmentierungen]] wie [[Datenbuchse]]n und [[Cyberaugen]] sind heute so üblich wie Mobiltelefone in den {{shx|2000ern}}, und genausosehr etwas, über das niemand mehr groß nachdenkt. Cyberware ist Alltag.
+
+==Funktionsweise==
+Möglich gemacht wurde Cyberware erst durch Erkenntnisse im Bereich der [[Naniten]]forschung in den {{shx|2010ern}}. Mit neuentwickelten Nanophagen genannten [[Naniten]] war es möglich, die elektronischen Schaltkreise der Implantate mit den Nerven des Trägers zu verbinden und somit die direkte Steuerung der Cyberware durch das Gehirn zu erlauben. Die Elektrizität die benötigt wird um die Implantate zu betreiben erzeugt der Körper weitgehend selbst. Größere Implantate verwenden allerdings eine kleine, Nucleotid-Phosphate verarbeitende Brennstoffzelle oder integrierte Batterien als zusätzliche Stromquelle. 
+{{Shadowtalk|Ja, [[Chummer]]. Und das heißt, dein Chrome isst mit, Mann!|'''''{{shx|ScareCrow}}'''''}}
+
+Weiterhin wird Cyberware möglichst nur aus Materialien hergestellt die vom Körper weder abgestoßen noch in der chemisch aktiven Körperumgebung angegriffen werden um übermäßige Immunreaktionen und kurze Implantatlebenszeiten zu vermeiden. Üblich sind Ekto-Myeline, pseudoorganische Keramiken, und eine Beschichtung der dem Körper ausgesetzten Teile der Cyberware durch körperähnliche Proteine.
+{{shadowtalk|Das vermeidet auch weitgehend die Notwendigkeit von Immunsuppressiva, wie [[Cybertram]] oder [[SANDIMMUN PLUS|<sup>s</sup>IMMUN+<sup>®</sup>]], außer um bei der Implantierung unmittelbar Komplikationen zu vermeiden. Es sei denn, natürlich, man lässt sich auf [[Omegaware]] ein, und muss die Chemie-Bomber dann für den Rest seines Lebens schlucken. - Aber wer tut sich das schon an?|'''''[[Macha]]'''''}}
+{{Shadowtalk|Wen interessiert's, Schnalle? Solang' meine Klinge außer Hand kommt, wenn ich sie brauch, schert's mich nicht, woher der Strom dafür kommt. Oder was für Pillen ich dafür schlucken muss.|'''''{{shx|Orphan}}'''''}}
+==Implantierung==
+Viele [[Bodyshop]]s in Malls (und auch [[Straßendoc]]s und [[Schattenklinik]]en) leben vor allem von Cyberware, gerade kleinen Eingriffen wie dem Einsetzen von [[Cyberaugen]] und [[Datenbuchse]]n. [[Cyberaugen]] sind inzwischen günstiger als eine chirurgische Augenkorrektur, und mit der schnellen Abfertigung in den Konsum-Chirurgie-Kliniken geht es auch schneller und meist ohne lästige Terminvergabe. Und wer es diskreter mag, wendet sich an [[Schwarze Klinik]]en oder [[Konzern]]kliniken. 
+
+Mehr hierzu im Artikel über [[Implantatchirurgie]].
+
+==Warum Chrom?==
+Von allen [[Augmentierungen]] hat Cyberware die längste Geschichte. Und lange sah es so aus, als würde das Chrom den Weg der medizinischen Prothesen und Holzbeine gehen. [[Bioware]], [[Genware]] und [[Nanoware]] waren eleganter, weniger invasiv, und wurden immer billiger und verfügbarer. 
+
+Aber mit der [[KFS]]-Krise stürzten die neuen Stars am [[Augmentation|Augmentierungshimmel]], denn plötzlich waren sie der Ausgangspunkt einer Seuche, und viel vom Erreichten ging verloren, als ganze Forschungskomplexe ausgelöscht wurden, Wissen unwiederbringlich mit seinen Trägern starb, und mehr noch in Archiven verschwand, als Regierungen und [[Konzerne]] das Ausmaß der Krise erkannten. 
+
+Jetzt ist Chrom zurück.
+
+===Vorteile===
+Auch wenn [[Transhumanismus|Transmetahumanisten]] und [[Konzern]]-[[Bottichjob]]s denken, Cyberware ist Schnee von Gestern, gibt es einiges, was für Chrom spricht. Es zwar so, daß Cyberware jetzt um die 50 Jahre auf dem Markt ist. Cyberware ist alte Tech. Cyberware hat viel vom Wow-Faktor der {{shx|2040er}} und {{shx|2050er}} verloren. 
+
+Allerdings ist sie nach wie vor die sichere Alternative, wenn man sich [[augmentierungen|Augmentieren]] will. Außerdem ist moderne Cyberware der {{shx|2070er}} ein Segen, wenn man sich an die Zeiten schlecht sitzender, unfunktionaler Protesen erinnert. Dank moderner [[Cybergliedmaßen]] muss der Verlust einer Hand oder eines Beins oder selbst des [[Cyberoptiken|Augenlichts]] durch einen Unfall oder Kriegsversehrung nicht länger bedeuten, dass man für den Rest seines Lebens ein Krüppel ist. Die Anpassung und Implantation einer [[Cyberhand]], eines [[Cyberarm]]s oder [[Cyberbein|-beins]] ist in den meisten Fällen Routine - vorausgesetzt natürlich, dass man es sich leisten kann.
+
+Und schließlich ist Cyberware preiswert, verfügbar, und ausgereift. Weder braucht man die Art von Betreuung, die eine Prototypbeandlung mit sich bringt, noch muss man irgendwoher Unsummen auftreiben, um sich die [[Augmentierungen]] leisten zu können. [[Omegaware]] gibt es in jedem Hinterhof. Cyberware ist Straße. Cyberware ist das, was die Masse der Bewohner der [[Sechste Welt|Sechsten Welt]] nutzen. Sicher, privilegiert geborene [[Magier]] und schwerreiche [[Johnny Spinrad]]-Möchtegerns rümpfen darüber die Nasen. Aber ein [[Sporne|Cybersporn]] tötet sie genauso wie die fortschrittlichste [[Nanoware]] in den Labors der [[Megakonzerne]].
+
+====Verfügbarkeit und Kosten====
+Die meisten legalen (und auch die meisten illegalen) Cyberware-[[Augmentierungen]] sind billig und leicht verfügbar und bieten daher ein gutes Preis-Leistungs-Verhältnis. [[Bioware]]- und [[Nanoware]]-Alternativen kosten meist das Doppelte oder mehr einer vergleichbaren Cyberware. Das macht Cyberware natürlich sehr attraktiv gerade bei Leuten, die nicht so viel Geld haben wie Militärs, Konzernsöldner oder [[Execs]]. [[Ganger]] und [[SIN]]lose, die sich in den [[Schatten]] hocharbeiten, kommen um Cyberware ebensowenig herum die einfache Soldaten oder Cops. Konzern-[[Sararimen|Lohnsklaven]] nutzen auch lieber die preiswerte Cyberware als teure [[Genware]]. 
+
+Das war nicht immer so. Noch in den {{shx|2050ern}} war Cyberware teuer und gar nicht so viel in den [[Barrens]] anzutreffen, aber mit sinkenden Produktionskosten sanken auch die Preise, und in den {{shx|2070ern}} ist Chrom bei [[Ganger]]n und [[Shadowrunner|Anfängerrunnern]] viel stärker vertreten. Ebenso haben der Preisverfall bei [[Talentleitungen]] und die Verbreitung von [[Talentsoft#Talentsoft-Matrixdienste|Talentsoft-Streamingdiensten]] für eine ganze Klasse von [[Sararimen|Konzernarbeitern]] gesorgt, die stark verdrahtet sind. 
+
+Und [[Datenbuchsen]], [[Cyberaugen]] und [[kosmetische Cyberware]] sind alltäglich.
+
+====Beherrschbarkeit====
+Cyberware ist eine bekannte und beherrschte Technologie. Sie war die erste Form von echter [[augmentierungen|Augmentierung]], und ist seit ihrer Einführung in den {{shx|2020ern}} immer besser verstanden und kontinuierlich verfeinert und verbessert worden. Heutige Cyberwaredesigns sind das Ergebnis eines jahrzehntelangen Lernprozesses. [[Cybergliedmaßen]], [[Cyberoptiken]], Cyber-[[Headware]] sind  einfach zu bekommen und installieren, und sicherer als die meisten [Bioware]]- oder [[Genware]]-Äquivalente. 
+
+Sicher, neu eingeführte Implantate brauchen immer noch Anpassung und haben Macken, aber die meisten Cyberware-[[Augmentierungen]] sind seit Jahren oder Jahrzehnten am Markt und aus dem Stadium der frühen, nicht ganz verstandenen Produkte herausgewachsen. Wenn man sich [[Cyberoptiken]], eine [[Datenbuchse]] oder eine [[FSE|Riggerkontrolle]] implantieren lässt, weiß man, was man bekommt, kennt die Risiken und kann sie beherrschen. 
+
+Cyberware ist außerdem schon lange genug verfügbar, dass auch Implantations- und Wartungstechnologie längst die meisten Kinderkrankheiten und Bugs hinter sich gelassen haben. Cyberware erfordert zudem wenig [[Nanotechnologie]] und ist wenig anfällig gegen Angriffe durch [[KFS|KI-Nanitenschwärme]]. 
+
+====Robustheit====
+Und mit Bekanntheit und Beherrschtheit einher geht auch, dass Cyberware im Zweifelsfall leicht zu warten und reparieren ist. [[KFS]] hat der Welt die Gefahren von [[Nanoware]] deutlich vor Augen geführt - wenn die Nanotechnologie nicht will wie man will, gibt es wenig was man tun kann. Bei Cyberware ist das anders - es gibt Herstellersupport, es gibt viele Cybertechs die Jahrzehnte an Erfahrung im Umgang mit Cyberware haben, es gibt Standardbehandlungen verfügbare Ersatzteile. Und dann kommt noch dazu, dass Cyberware oft einfach robuster ist als organische Alternativen.
+
+Während [[Bioware]] im Prinzip nur manipuliertes Fleisch und Knochen ist, besteht Cyberware aus gut bekannten und realitätserprobten Plastikwerkstoffen, Polymeren und Myomeren, Keramiken und körperresistenten, nichtkorrodierenden Legierungen, isolierten Mikroelektronikkomponenten, Glasfaserkabeln und optischen Computern, Mikrogyroskopen und Elektromotoren. Das macht sie einfach robuster als Fleisch, dessen Beschränkungen auch von Bioware nicht umgehbar sind. [[Cyberarme]] können durchaus gefahrlos in Flammen greifen - Kühlungssysteme verhindern zumindest eine Zeit lang, dass sie die Hitze an das Fleisch, mit dem sie verkuppelt sind, weitertragen - und durch die Möglichkeit, Komponenten abzustellen kann man auch unangenehme Sensorinputs ignorieren. Und eine Reparatur ist deutlich schneller und oft nicht weniger schwierig, als zu warten dass (und ob) Fleisch wieder abheilt. 
+{{shadowtalk|Es sei denn natürlich, man bezieht [[Heilmagie]] in die Überlegung ein.|'''''{{shx|Spirit}}'''''}}
+{{shadowtalk|Nicht jeder hat einen persönlichen Heilmagier oder kann sich bei jedem Wehwehchen einen [[Magier]] leisten, der sich drum kümmert.|'''''[[apeman]]'''''}}
+
+====Vielseitigkeit====
+Auch wenn sie invasiver sind als viele dieser Alternativen, sind Cyberware-[[Augmentierungen]] außerdem vielseitiger und anpassbarer - schon was im Bereich der [[kosmetische Cyberware|Kosmetischen Cyberware]] möglich ist, ist mit anderen Methoden kaum zu erreichen. Und das ist noch längst nicht alles, was Cyberware kann. 
+
+Zumal das drängenste Problem lange gelöst ist. Anfangs war die Energieversorgung von Cyberware noch ein großes Problem, und die Träger früher Implantate waren gezwungen schwere und klobige Akkus mit sich herum zu tragen. Bald jedoch wurde eine Lösung gefunden: Mittels neuer supraleitender Materialien war es möglich die vom Körper erzeugte Bioelektrizität aufzufangen und bei energiehungrigen Implantaten sogar aus entlegeneren Bereichen des Körpers zu holen.
+{{Shadowtalk|Was natürlich meistens zu richtigen Fressanfällen führen kann.|'''''{{shx|ScareCrow}}'''''}}
+{{shadowtalk|Das ist nichts gegen einige [[Bioware]]implantate!|'''''[[Apeman]]'''''}}
+
+Es ist einfach so, das Maschinen manches können, was Fleisch nie wird leisten können. Damit ist nicht Stärker, Schneller und Effektiver zu sein gemeint, sondern die volle Rotationsfähigkeit eines Zahnrads ebenso wie die Dichte und Schadensressitenz von Ceramet-Werkstoffen, Energie-Effekte wie Laser und Interaktion mit Radio- und Masersignalen. Biologische Komponenten können diese Dinge einfach nicht leisten. Es gibt keine Alternativen zu einigen Cyberwaresystemen, und das nicht, weil es nie versucht wurde, nur ist manches nur schwer mit [[Bioware]], [[Genware]] oder [[Nanoware]] nachzubauen. Es gibt, beispielsweise, keine Alternative zu Datenbuchsen, oder [[Orientierungssystem]]en, oder [[FSE|Riggerkontrollen]]. Nur mit Cyberware kann man solche Leistungen erbringen.
+
+===Nachteile=== 
+Natürlich hat Cyberware nicht nur Vorteile. Sie hat sogar erhebliche Nebenwirkungen und Nachteile gegenüber anderen Formen der [[Augmentierungen|Augmentierung]]. Alles hat seinen Preis, und Chrom ist da wirklich keine Ausnahme.
+[[Datei:Cyberwareschäden.jpg|thumb|right|400px|Cyberwareschäden oder -fehlfunktionen können sowohl für den Träger als auch für dessen Umgebung sehr unangenehm, schmerzhaft und teilweise akut lebensbedrohlich werden.<br/>{{C Fanpro|FanPro LLC}} (<u>Urheber:</u> Tom Fowler)]]
+====Verwundbarkeit gegenüber Hacking====
+Cyberware ist Tech. Die meiste Cyberware ist [[WiFi-Matrix|WiFi-aktiv]]. Das ist einerseits ihre große Stärke und wichtig für viele ihrer einzigartigen Funktionen. Andererseits ist es auch eine große Verwundbarkeit, vor allem in Zeiten der [[WiFi-Matrix]]. 
+
+Cyberware kann gehackt werden. Das ist ein trauriger Fakt und der vielleicht gefährlichste Nachteil, zumindest kurzfristig. Davor kann man sich - in den Grenzen, die Technologie vorgibt - schützen, aber man muss es beachten. Außerdem ist das nichts, über das sich Joe und Jane [[SIN]]ner viele Gedanken machen, nicht mehr jedenfalls als über Hacks ihres autonomen Autos oder ihres Smart Home. Aber für diejenigen in den [[Schatten]] - und in Militär und Sicherheitsbranche - ist es ein großes Problem. 
+
+Ein Ausweg ist, möglichst wenig Cyberware an die Matrix zu hängen. Mit dem [[Cyberware-Router]] gibt es hierfür eine halbwegs gut funktionierende Lösung. Wenn nur Interkonnektivität gefragt ist, ist der Router eine gute und schwer hackbare Alternative zum [[PAN]]. Viele Cyberware bezieht aber einen guten Teil ihrer funktionalität daraus, dass externe Daten ausgewertet werden - so zum Beispiel das [[Orientierungssystem]] oder die [[FSE|Riggerkonrolle]] die beide erheblich gewinnen, wenn sie über die Matrix kommunizieren. In letzterem Fall hilft nur, sich mit einer möglichst guten [[Firewall]] abzusichern und auf das Beste zu hoffen. Sorry, [[Chummer]], isso.
+
+====Regelmäßige Wartung====
+Anders als [[Bioware]], [[Genware]] oder [[Nanoware]] (mit einem [[Nanitenbrüter]]) verfügt Cyberware über keine Selbstheilungsfunktion und ist daher nicht nur bei Beschädigung, sondern auch im Alltag Abnutzung ausgesetzt, die nicht einfach wiederhergestellt werden kann. Cyberware braucht Wartung. Die Funktions-Benchmarks moderner Cyberware sind vom Hersteller mit gutem Grund nur bei regelmäßiger Wartung garantiert. Das ist bei den allermeisten Implantaten ein jährlicher Diagnosezyklus, bei manchen Systemen - etwa [[Cyberoptiken]] und [[Reflexbooster]]n sind die Intervalle kürzer, bei anderen - wie [[Kompositknochen]] und [[Cybertorsos und Cyberschädel]]n - sind die Zyklen länger. Als Faustregel gilt, dass komplexere, leistungsstärkere Cyberware mehr Wartung braucht als Basissysteme. 
+
+Außerdem unterliegt Cyberware durchaus den Updatezyklen der Techbranche. Zwar ist der Produktzyklus länger - niemand lässt sich jedes halbe Jahr den Schädel aufsägen, auch wenn kaum ein [[SIN]]ner darüber nachdenkt, dass das [[Kommlink]] jedes halbe Jahr "kostenlos" gegen ein neues getauscht wird. Aber Firmwareupdates, Sicherheitspatches und dergleichen betreffen Cyberware wie alle Tech. Und das kann durchaus ein Problem sein, vor allem in den [[Schatten]]. 
+
+Für Standardcyberware ist das wenig problematisch (und bei [[Omegaware]] ist es eh schon egal) aber für bessere Cyberwarekategorien kann das durchaus nicht einfach sein, denn die Wartung muss idealerweise von kompetenten Personen vorgenommen werden. Ein [[Straßendoc]] kann [[Deltaware]] zwar bestaunen (und möglicherweise versuchen, sie dem Träger zu stehlen), aber sinnvolle Updates oder Wartung ist mit den beschränkten Mitteln einer Hinterhofklinik schwer möglich. Auch in einem legalen [[Bodyshop]] in der Mall wird man solche Implantate nur ungläubig anschauen. [[Deltaklinik]]en sind selten, und die allermeisten gehören einem Megakonzern. Wer seine [[Deltaware]] kompetent warten lassen möchte, gehört das daher entweder auch, oder hat irgendein Arrangement. 
+
+Weniger drastisch, aber doch ähnlich, ist es mit [[Betaware]]. Hier reicht es aber, Kontakte in eine gute Klinik zu haben. Was [[Gammaware]] angeht - dafür gibt es noch keine Wartungsroutinen. Das sind Prototypen im Alpha-Test-Stadium. Aber die Werte von Fehlfunktionen solcher radikaler Cyberware sind bei Megakonzernen sicher gerne gesehen, erlauben sie doch Rückschlüsse auf Design und Funktion. Nur helfen kann da selbst der eigentliche Hersteller wahrscheinlich nicht.
+
+====Legalität====
+Auch die Beherrschtheit der Technologie hat ihre Schattenseiten. Die Mühlen des Gesetzes mahlen langsam. Während so manche experimentelle [[Nanoware]] und selbst einige [[Genware|Gen-]] und [[Bioware]] schlicht noch zu neu ist, hatte der Gesetzgeber schon Jahrzehnte Zeit, sich mit Cyberware auseinanderzusetzen. Daher ist Cyberware deutlich strenger reguliert als die [[SOTA]]. Cyberware mag inzwischen in der breiten Bevölkerung akzeptabel sein - aber die [[Polizei|Cops]] haben immer ein Auge auf schwer [[Vercybert]]e. "Driving/Walking/Existing-While-Cybered" ist immer noch ein fast so guter Grund für eine 'zufällige Verkehrskontrolle' wie Driving-While-Ork.
+
+Viele Cyberimplantate sind völlig legal und können unbedenklich in der Öffentlichkeit geführt werden. Die Legalität vieler Implantate bedeutet aber natürlich immer noch nicht, dass es legitim wäre sie für illegale Dinge ([[Datenbuchse]]n für [[Decker|Cyberkriminalität]] und [[BTL]]-Konsum, [[Schmuggelbehälter|Körperbehälter]] für [[Schmuggel]], [[Riggerkontrolle]]n für [[Autoduellist|Autoduelle]]) zu nutzen.
+
+Andere, und das sind oft die, die für [[Shadowrunner]] interessant sind, wurden explizit für dem Kampf konzipiert und sind damit rechtlich problematischer. Und da kennen viele Sicherheitsorgane wenig Spaß. Hier sind mindestens Lizenzen nötig. Auch wenn man [[Kunstmuskeln]] als Bauarbeiter besitzt, braucht man schon zwei - eine für den Besitz, eine für die Mitführung und Nutzung im Kontext der Arbeit. Wie andere Lizenzen auch sollten diese sowohl an eine [[SIN]] gekoppelt sein, als auch in einem plausiblen Kontext (Bob der Klempner wird eher keinen Bedarf an einem [[Reflexbooster]] haben).
+
+Generell kann man sagen, dass [[Cyberwaffe]]n universell illegal sind, außer für [[Polizei|Sicherheitsorganisationen]] und [[Militär]] sowie in den wenigen Staaten, die [[Tödliche Sportarten|Bloodsports]] erlauben. Militärische (wie [[Reflexbooster]]) oder Sicherheitsklassifizierte (wie ein [[Smartlink]]) sind, je nach Land, leichter verfügbar und auch leichter erklärbar: niemand geht davon aus, dass ein [[Söldner|Elitesöldner]] der [[MET 2000]] seinen [[Cyberarm]]-Gyrostabilisator abschraubt, wenn er gerade außer Dienst ist. Wer hingegen außer Dienst mit einer unverplombten [[Cyberwaffen|Cyberwaffe]] unterwegs ist, wird mit Sicherheit bei Entdeckung festgenommen.
+
+Dazu kommt noch, dass Cyberware mittlerweile - abseits der Alltags-Augmentierungen - einen Ruch von Straße, [[Ganger|Gangs]] und Unterschicht hat. Und da sich die Kampfkraft eines Individuums durch Cyberimplantate enorm verstärken lässt, findet sich natürlich viel illegale Cyberware in den [[Schatten]]. Ganze Bereiche des organisierten Verbrechens verdienen ihr Geld nur durch den Handel von gebrauchter und gestohlener Cyberware. Entsprechend sollte man seine eingeschränkt oder gar nicht legale Cyberware gut tarnen und eine gute Erklärung dafür haben, wenn sie in einem Cyberwarescanner auftaucht. Allerdings ist für einen Laien oft nicht klar erkennbar, mit was für einem Implantat man es da zu tun hat, also ist es durchaus möglich (und üblich) in [[Schatten]]kreisen, in gefälschten [[SIN]]s einfach ähnliche [[Augmentierung]]en anzugeben die weniger illegal sind, beispielsweise eine medizinische Nervenprothese statt einem [[Move-by-Wire System]].
+
+====Invasivität====
+Cyberware belastet den metamenschlichen Körper. [[Metamenschen]] sind eben nicht dafür gemacht, mit elektromechanischen Komponenten verbunden zu werden. Solche einbauten sind zu fremdartig und anders, und der Körper wehrt sich oft gegen sie und hat größere Akzeptanzprobleme als bei [[Bioware]], [[Genware]] oder [[Nanoware]].  Nutzer von [[Omegaware]] müssen oft sogar dauerhaft Medikamente nehmen, um Abstoßungsreaktionen zu verhindern. Neue Implantate haben eine gute Chance von Komplikationen in die Richtung, selbst hochwertige, und für eine Übergangszeit sind Medikamente wie [[Cybertram]] normal. 
+
+Und dann kommt noch dazu, dass viele Nutzer eine Entfremdung erleben, denn auch der metamenschliche Verstand kommt nicht mit jeder technologischen Erweiterung gut klar. Hierbei gilt zu beachten, dass die Einstellung der Person sehr wichtig ist. Wer Implantate annimmt und akzeptiert - oft, weil sie bewusst gewählt wurden - hat weniger Risiko einer solchen gedanklichen Abstoßung, als jemand, der die Cyberware mit einem Trauma - etwa einem Unfall - verbindet.
+{{shadowtalk|Jeder Cybertech kann Geschichten von Patienten erzählen, die ihre neuen Cyberaugen aus dem Schädel gerissen haben, ihre Cybergliedmaßen mutwillig zerstört haben, oder versuchen, mit Messern, Gabeln und Löffeln Datenbuchsen oder andere Implantate loszuwerden. Geschätzt jeder Zwanzigste kommt einfach nicht auf Cyberware klar. Und das sind nicht nur Magier und Ökos. Klar, manche lehnen die Grundidee schon ab, wie Amische, aber Vielen ist da kein Problem bewusst, bis sie das Metall und Plastik im Körper haben und spüren, wie falsch es sich für sie anfühlt. Und dann drehen sie durch.|'''''[[Doc.Wunderlich]]'''''}}
+
+====Essenzverlust====
+Je mehr Fleisch, Haut, Knochen und Muskeln ein [[Metamensch]] durch Chrom, Keramik und Plast ersetzen lässt, umso mehr verliert er einen Teil seines lebendigen Selbst. Dies bezeichnet man gemeinhin als Verlust der [[Essenz]], deren Natur sich allerdings auch nach Jahrzehnten der wissenschaftlichen Deutung entzieht. Mehr dazu im Artikel über [[Essenz]].
+
+Fest steht, dass Essenzverlust zu massiven psychischen und psychosomatischen Problemen bis hin zum Tod führt. Besitzer von vielen Cyberimplantaten werden oft als leicht reizbar, ungeduldig, gefühlskalt und unfähig zu sozialen Kontakten beschrieben, es besteht die Tendenz zur {{WP|Soziopathie}}. Man spricht aufgrund der nachgewiesenen Kausalität auch von einer [[Cyberpsychose]].
+{{Shadowtalk|Wer hat das geschrieben? Den Mistkerl leg ich um!|'''''[[Raptor]]'''''}}
+{{Shadowtalk|q.e.d.|'''''{{shx|Spirit}}'''''}}
+{{Shadowtalk|Mann, lass dir Humor implantieren.|'''''[[Raptor]]'''''}}
+{{Shadowtalk|Wenn das stimmt, müsste ich verdammt viel Cyberware mit mir rumtragen. Zumindest wenn man sich nach dem richtet, was die Typen um mich rum sagen.|'''''{{shx|Blank}}'''''}}
+{{Shadowtalk|Wo ist das Problem Chummer? Stimmt doch alles.|'''''{{shx|Linc}}'''''}}
+
+Feststeht auch, das zu viel Essenzverlust tödlich ist. Unwiederbringlich. 
+{{shadowtalk|Oder zumindest ... fast. Aber [[Cybermantie]] ist keine gute Idee.|'''''[[Raptor]]'''''}}
+
+Eine gute Nachricht ist allerdings, dass [[Essenz]]verlust mittlerweile korrigierbar ist. Die entsprechenden [[Gentherapie#Revitalisierung|Gentherapien]] sind teuer, zeitintensiv, und erfordern die Entfernung störender [[Augmentierungen]], aber mit genug (viel, viel) [[Nuyen]] und Zeit kann man zumindest die Schäden an der [[Aura]] beheben. Ob das mit der Psyche des (ehemals) [[Augmentierungen|Augmentierten]] auch gelingt, steht auf einem anderen Blatt.
+
+====Durch Cyberware ausgelöste Erkrankungen====
+Cyberware ist schlecht für die geistige und körperliche Gesundheit. Dies ist inzwischen ein allgemein akzeptierter Fakt - nur konzerneigene PR-Agenturen und einige irre [[Transhumanist]]en behaupten noch etwas anderes. 
+
+[[Cyberware]] (und auch [[Bioware]]) können das Immunsystem eines Nutzers nachhaltig aus dem Gleichgewicht bringen. Die [[Augmentierung]]en werden nicht bei jedem Nutzer angenommen, und der Körper empfindet sie dauerhaft als Fremdkörper und wehrt sich gegen sie, was dann medikamentös behandelt werden muss. Diese Behandlung wiederum schwächt das Immunsystem insgesamt.
+
+{{Hauptartikel|Cyberpsychose}}
+Mit zunehmender [[vercybert|Vercyberung]] verliert die betreffende Person auch mehr und mehr ihrer Menschlichkeit, was sich bei schwer verchromten [[Straßensamurai]]s und anderen schwer [[vercybert|Vercyberten]] oft in fortschreitender emotionaler Kälte und Distanziertheit niederschlägt. Dies ist eine klassische [[Cyberpsychose]], eine Geistesstörung, hervorgerufen durch Augmentierungen (daher ist der Name, wenn auch historisch gewachsen, etwas unfair).
+
+{{Hauptartikel|TLE-x}}
+Ein weiteres übliches Krankheitsbild ist TLE-X, eine Temporallappenepilepsie mit Komplikationen. Diese primär, aber nicht nur von [[Move-by-Wire System]]en ausgelöste schwere, degenerative Hirnerkrankung kann in den Anfangsstadien medikamentös mit [[AEXD]] und später mit Hirnchirurgischen und [[Gentherapie|gentherapeutischen]] Mitteln behandelt werden, im Endstadium ist sie aber unheilbar. 
+
+{{Hauptartikel|CCSS}}
+Anders als TLE-x ist CCSS eine primär durch [[Move-by-Wire System]]e ausgelöste Erkrankung, die durch die Funktion der Implantate bedingt ist. Hierbei stellen große Teile des motorischen Zentrums und der Wahrnehmungsfunktionen des Gehirns den Dienst ein, überladen von den ständigen Impulsen des Implantats. Eine Therapie ist möglich, aber langfristig, und der Erfolg keinesfalls gesichert. Zudem ist die Entfernung des Move-by-Wire Systems eine Grundvoraussetzung.
+
+==Kategorien von Cyberware==
+Es gibt tausende Cyberware-Implantate in der [[Sechste Welt|Sechsten Welt]]. Um sich Übersicht und Ordnung zu verschaffen, werden sie auf verschiedene Arten kategorisiert. Dabei sind die üblichen Kategorisierungen nach Qualität der Implantate und ihrer Funktion.
+
+===Qualitätskategorien===
+Cyberware wird in verschiedenen Qualitätsklassen hergestellt, die sich in ihren Auswirkungen auf den (Meta-)menschlichen Körper und in ihrer Verarbeitungsqualität unterscheiden. Obwohl in diesem Bereich noch mit Hochdruck geforscht wird, ist die Implantation von Cyberware immer noch ein heikler Prozess. Der [[Metamenschheit|(Meta-)menschliche]] Körper ist nicht dazu geschaffen zusätzliche Erweiterungen aufzunehmen. Deshalb ist es besonders bei etwas größeren Implantaten oft nötig Gewebe oder sogar Knochen zu entfernen um Platz zu schaffen. 
+{{Shadowtalk|Das sage ich ja schon immer, aber mir hört ja keiner zu. Der menschliche Körper ist gut so wie er ist. Für Chrom ist da ganz einfach keim Platz mehr. Alleine der Gedanke dass jemand ein Loch in meinen Schädelknochen bohrt um da eine [[Datenbuchse]] einzusetzen bringt mich zum Würgen.|'''''{{shx|Spirit}}'''''}}
+{{shadowtalk|Leute wie du lassen mich echt überlegen, an einen Mage Hater-Policlub zu spenden. Suhlt euch nur in eurem Privileg und gebt neunmalkluge Ratschläge, ihr Drekheads.|'''''[[Raptor]]'''''}}
+{{Shadowtalk|Du bist ja bloß neidisch weil du es dir nicht leisten kannst besser als die anderen zu sein.|'''''{{shx|Popeye}}'''''}}
+{{Shadowtalk|Du bist zu schwach und kannst nicht mehr? Kein Problem! Nimm Cyberware! Ach ja Spirit: Schmerzen gehören zum Job|'''''{{shx|Linc}}'''''}}
+
+Allerdings gibt es verschiedene Qualitätsstufen von Cyberware, die dieses Problem zumindest etwas mildern. Aufgrund der Tatsache, dass bei der Erstellung der Nervenverbindungen komplizierte Naniten benötigt werden sollte bei der Operation auch ein erfahrener [[Nanoware]]spezialist anwesend sein und diesen Prozess überwachen.
+{{Shadowtalk|Ja, "sollte". Da wo [[Shadowrunner]] sich in der Regel ihre Implantate einsetzen lassen kannst du ja schon froh sein wenn der Typ der da an dir rumschnipselt überhaupt Medizin studiert hat.|'''''{{shx|Grease}}'''''}}
+
+Die Qualität von Cyberware ist grob in sechs Kathegorien erfasst - Alpha bis Gamma (über Delta) und Omegaware. Sie sind verschiedene Abstufungen guter oder weniger guter Materialien, Verarbeitungsqualität und Komplexität der Implantate. Eine spezielle Form derOmegaware ist gebrauchte Cyberware, die technisch gesehen meist von Standard- oder Alphawarequalität ist, aber schon einmal in einem anderen Nutzer implantiert und an diesen angepasst war. 
+
+Je nach Schwere des Eingriffs und Komplexität des Implantats kann solch eine Operation ambulant vorgenommen werden, oder aber eine Rehabilitationszeit von bis zu mehreren Wochen nach sich ziehen.
+{{Shadowtalk|In letzerem Fall spricht man auf der Straße von einem Bottichjob... weil man die Rehabilitationszeit größtenteils in einem Tank mit Nährlösung verbringt.|'''''{{shx|Interpreter}}'''''}}
+
+====Standardcyberware====
+Die ganz normale Cyberware von der Stange. [[Standardcyberware]]-Implantate werden in Massenproduktion hergestellt und sind vergleichsweise günstig zu haben. Sie sind daher allerdings auch wenig auf den Nutzer zugeschnitten, invasiv und haben dadurch relativ starke Auswirkungen auf das Gleichgewicht zwischen Körper und [[Aura]], und führt zu starkem [[Essenz]]verlust. Die Implantation ist allerdings einfach, standardisiert wie die Implantate, und dank hilfreicher [[AR]]-Guides auch für [[Straßendoc|Hinterhofmediziner]] durchführbar, ohne dass es zwingend zum Exitus des prospektiven Trägers kommt.
+
+Mehr dazu im [[Standardcyberware|entsprechenden Artikel]].
+
+====Alphaware====
+[[Alphaware]] wird nach deutlich strengeren Qualitätsrichtlinien als normale Cyberware hergestellt. Sie besteht aus biokompatibleren Materialien, die weniger starke Auswirkungen auf den Körper haben, wird in geringen Stückzahlen und zumindest in Teilen nach Maß produziert. Aufgrund der höheren Materialkosten und der teilweisen Personalisierung ist Alphaware deutlich teurer als Standardcyberware. Die Effekte auf das Gleichgewicht zwischen Körper und [[Aura]] sind jedoch deutlich weniger gravierend. Nicht nur bedeutet das weniger einschneidende Schäden an der Aura, es erhöht auch die relative Menge an Implantaten, die ein Nutzer in sich tragen kann, bis psychische Schäden auftreten, oder gar der Essenz-Nullpunkt erreicht ist, und der Tod eintritt. 
+
+Mehr dazu [[Alphaware|im entsprechenden Artikel]].
+
+====Betaware====
+[[Betaware]] ist, anders als Alphaware, maßgeschneiderte Cyberware. Sie wird nicht erst produziert und dann verkauft, sondern kann nur auf Bestellung hergestellt. Betaware ist genau auf die Körperchemie und Physiologie des Kunden abgestimmt, und wird wie Alphaware nur aus den besten Materialien gefertigt. Aufgrund dieser Einschränkungen ist Betaware außerhalb der Oberschicht und außer für Konzernbürger nur schwer verfügbar. 
+
+Mehr dazu im [[Betaware|entsprechenden Artikel]].
+
+====Deltaware====
+[[Deltaware]] war lange Jahre - die {{shx|2050er}} und die {{shx|2060er}} - ein Mythos. Nur die wenigen [[Deltaklinik]]en der Megakons konnten sie herstellen und implantieren. Das ist auch heute noch so, aber mittlerweile hat fast jeder [[Sprawl]] von Rang eine Deltaklinik, die Prozeduren sind bekannt und verstanden, und es gibt sogar Deltaware-Kleinserien mit Markennamen.
+
+Mehr dazu im [[Deltaware|entsprechenden Artikel]].
+
+====Gammaware====
+Offiziell gibt es Gammaware noch gar nicht. Sie ist das neue heiße Ding, die Deltaware der späten {{shx|2070er}} und {{shx|2080er}}. Angeblich hat [[Evo]] sie. Eventuell auch [[MCT]] und [[Universal Omnitech]]. Und es gibt Gerüchte um das geheimnisvolle, kultartige Konglomerat [[Zion Amalgamated]] aus [[Äthiomalische_Gebiete|Äthnomalia]]. Aber keiner weiß genaueres. Sie ist noch experimentell, aber sie ist der nächste große Entwicklungsschritt des Chrom.
+
+Mehr dazu im [[Gammaware|entsprechenden Artikel]].
+
+====Omegaware====
+Omegaware ist die Cyberware der Straße. Wo [[Gammaware]] das neueste heißeste Ding ist, ist [[Omegaware]] der letzte Drek. Discount-Cyberware, Nachbauten der Cyberware drei Produktgenerationen vor dem Stand der Zeit.  Hergestellt in Sweatshops, unter zweifelhaften Bedingungen, aus sehr zweifelhaften Materialien, was zu einem fürchterlichen Produkt führt. Wenn man Glück hat. Wenn man keins hat, bekommt man gebrauchte Cyberware, unhygienisch und, da sie für jemanden anderen konfiguriert ist, besonders Unverträglich. Aber auch besonders billig. Und das ist für viele Ausschlaggebend. So können sie sich wenigstens irgendeine [[Augmentierungen|Augentierung]] leisten. 
+{{shadowtalk|[[Omegaware]] ist also die neue ''gebrauchte Cyberware''. Geht doch nichts über ein schönes ''Rebranding'' ...|'''''[[Raptor]]'''''}}
+{{Shadowtalk|Nicht ganz. Gebrauchtes Chrom gibt es noch immer und kostet aufgrund Vorbelastung mehr Essenz. Omegaware ist enweder übrig gebliebener Prototyp, absichtliche Billigware, Ware mit Einschränkungen um den Träger zu manipulieren wie zum Beispiel ein Cyberarm der sich weigert auf Ares Bürger loszugehen oder einfach nur miese Qualität.|'''''[[Mercy]]'''''}}
+Mehr zu dem Thema im [[Omegaware|entsprechenden Artikel]].
+
+===Funktionale Kategorien===
+Neben ihrer Qualität kann man Cyberware auch nach ihrer Funktion kategorisieren. Cyberware wird heutzutage in sechs Kategorien eingeteilt, die durch ihre Funktion wie auch ihre Lage im Körper bestimmt werden, auch wenn diese Unterteilung fluide ist und sich ständig ändert, ebenso wie Cyberware immer weiterentwickelt und differenziert wird. 
+
+====Kosmetische Cyberware====
+Diese Kategorie deckt alle technischen oder größtenteils anorganischen [[Augmentierungen]] ab, die keinen primär funktionalen Nutzen haben, sondern das Aussehen der Nutzer [[Augmentierungen|augmentieren]]. Neben uralten Bekannten wie [[Brustimplantate]]n gehören hierzu auch [[Cybergenitalien]], moderner Körperschmuck wie [[LED-Tattoos]] und Hörner, Nieten und Spikes, die eher der Zierde denn dem Kampf dienen. 
+
+Mehr dazu im [[kosmetische Cyberware|entsprechenden Artikel]].
+
+====Headware====
+Cyberware die sich im Kopf befindet bezeichnet man zumeist als Headware. Üblicherweise ist ihre Funktion, in irgendeiner Weise die geistigen Kapazitäten des Benutzers auszubauen oder Schnittstellen zur Kommunikation zur Verfügung zu stellen. 
+
+Mehr dazu im [[Headware|entsprechenden Artikel]].
+
+====Senseware====
+Senseware bezeichnet all jene Implantate die die Sinne des Benutzers schärfen oder erweitern. Unter diese Kategorie fallen zum Beispiel Implantate wie [[Cyberoptiken]] und [[Cyberohren]], aber auch neue Sinne wie Radarsensoren.
+{{Shadowtalk|Nicht zu vergessen der allseits beliebte [[Geruchsverstärker|Cybersniffer]] oder Cyberrüssel, der dir einen leistungsfähigeren Geruchssinn verleiht, als ihn ein trainierter Schäferhund besitzt.|'''''{{shx|StarSchnitt}}'''''}}
+{{Shadowtalk|Wenn man so ein Ding hat, sollte man besser kein Soy-Chili zum Mittagessen servieren.|'''''{{shx|McMan}}'''''}}
+Senseware ist eine Unterkategorie der [[Headware]]. Mehr dazu im [[Senseware|entsprechenden Artikel]].
+
+====Bodyware====
+Sämtliche Cyberware, die nicht im Kopf des Patienten sitzt, nennt man Bodyware. Meist erweitert sie die physischen Eigenschaften des Körpers, indem sie ihn zum Beispiel schneller, stärker oder widerstandsfähiger macht. Beispiele hierfür sind [[Kompositknochen]], [[Kunstmuskeln]] oder [[Dermalpanzerung]]. Andere Bodyware, die um funktionen erweitert wären beispielsweise der [[Biomonitor]], der [[interner Lufttank|Lufttank]], oder die subdermalen Induktionspads, die als Schnittstelle zum [[Smartgun]]-System dienen.
+
+Mehr zu Bodyware im [[Bodyware|entsprechenden Artikel]].
+
+====Cybergliedmaßen====
+Im Gegensatz zu normaler Cyberware erweitern [[Cybergliedmaßen]] nicht bestimmte körperliche Eigenschaften oder Fähigkeiten, sondern tauschen ganze Körperpartien durch künstlichen Ersatz. Meist werden sie nach einem Unfall, bei dem die natürliche Gliedmaße verloren wurde, zur Wiederherstellung verwendet, aber manche Personen ersetzen freiwillig Teile ihres Körpers durch die künstlichen Equivalente. Da Cybergliedmaßen einen enormen Eingriff in die Integrität des Körpers darstellen ziehen sie meist einen enormen [[Essenz]]verlust nach sich. Neben normalen [[Cyberarm]]en und [[Cyberbein]]en gibt es auch [[Cybertorsos und Cyberschädel]]. 
+
+Mehr zu Cybergliedmaßen im [[Cybergliedmaßen|entsprechenden Artikel]].
+
+====Cyberwaffen====
+Als letzte Kategorie gibt es noch die Cyberwaffen. Das bezeichnet alle Arten von Hieb-, Stich- und Feuerwaffen, die implantiert werden können, vom [[Nagelmesser]] über [[Augenwaffe]]n und [[Schädelbombe|Cortexbomben]] bis zur [[Cybergun]]. Auch [[Raptorklauen]] und [[Projektilsporn]]e fallen darunter, nicht aber [[Kompositknochen]], auch wenn diese ebenfalls Potential als Waffen haben, da sie aber nicht primär als Waffe entwickelt wurden, sondern zur Stärkung des Skeletts. 
+
+Für mehr über Cyberwaffen siehe den [[Cyberwaffen|entsprechenden Artikel]].
+
+==Grenzbereiche==
+Cyberware hat alle Bereiche der [[Sechste Welt|Sechsten Welt]] durchdrungen, und in einigen Fällen die Grenzen des Machbaren weit gestreckt. Neben der durchaus breit angewandten [[vercybert|Vercyberung]] von Tieren wird mit gemischten Erfolgen versucht, Cyberware mit [[Critter]]n, intelligenten magischen Wesen und [[MMVV|Infizierten]] zu verbinden. 
+
+Und man kann mit Cyberware sogar dem Tod ein Schnippchen schlagen. Aber zu einem enormen Preis.
+
+===Cyberware und Erwachte===
+Selbst in kontroversen Bereichen findet Cyberware überraschend oft Anwendung. Zwar wirkt sich jeder [[Essenz]]verlust sofort negativ auf die Fähigkeit [[Erwachte]]r, [[Mana]] zu manipulieren, aus. Dies kann sogar dazu führen dass sie [[Zaubern|diese Fähigkeit]] komplett verlieren - für immer, unwiederbringlich. Dennoch sind nicht alle magischen Schulen gegenüber [[Augmentierungen]] komplett verschlossen. Manche sehen durch aus Vorteile für Magier in einem gewissen Maß an [[Augmentierungen]]: [[Cyberoptiken]] verbessern die Effektivität direkt gewirkter Zauber - die von Blickkontakt des Zaubernden abhängen - beträchtlich. Intelligenzsteigernde Implantate wie [[Enzephalon]]e zeigen ebenfalls für [[Magier|Magiewirker]] nützliche Effekte, genauso wie einige [[Bioware]]. 
+
+Aber es ist ein Tanz auf Messers Schneide, und solche Cybermagier fallen schneller, als ihnen lieb ist. Man spricht dann vom ''[[Ausbrennen]]'' oder dem ''Weg des Burnout''. Stark [[vercybert]]e [[magisch Begabte]] sind daher selten noch magisch aktiv. 
+{{shadowtalk|Der Pfad des [[Augmentierungen|Augmentierten]] ist unnatürlich. Die Welt selbst schaut mit Abscheu auf die, die ihn beschreiten.|'''''[[Tanzt-in-der-Matrix]]'''''}}
+{{shadowtalk|Das sag ich ja auch schon immer, aber die ganzen Wireheads wollen das ja nicht hören ...|'''''{{shx|Spirit}}'''''}}
+{{shadowtalk|Die ganzen Wireheads stehen halt nicht so drauf, wenn [[Magier]] ihnen sagen, sie sollen die Fresse halten und wissen, wo ihr Platz in der Welt ist.|'''''[[Raptor]]'''''}}
+
+Dennoch ist diese Form der Optimierung nach Kosten-Nutzen-Rechnung im Konzernbereich durchaus beliebt. Ähnliches gilt für [[Ki-Adept|Körperadepten]].
+
+===Cyberware und Technomancer===
+Auch für [[Technomancer]] ist Cyberware problematisch, da sie die Verbindung zur [[Resonanz]] einschränkt - ähnlich wie bei [[Magier]]n die Fähigkeit der [[Mana]]manipulation. Das ist für viele Technomancer, die nach dem Crash erwachten, eine zusätzliche Strafe, da ein Decker - und selbst ein [[Otaku]] - ja zumindest auf ein [[ASIST]]-Interface, meist eine [[Datenbuchse]], angewiesen war.
+
+Dennoch hat maßvolle [[vercybert|Vercyberung]] für Technomancer auch Vorteile. Besonders bestimmte [[Headware]], die die geistigen Fähigkeiten steigert, wirkt sich nämlich positiv auf ihre [[Persona|lebende Persona]] aus.
+
+===Cyberware und MMVV-Infizierte===
+[[Vampire]] können überhaupt keine Cyberware außer [[Deltaware]] implantiert bekommen, da ihre regenerativen Fähigkeiten zwangsläufig zur Abstoßung führen.  
+
+Mehr dazu im [[Cyberware und Vampire|entsprechenden Artikel]].
+
+Für [[Ghule]] wie den Pirat [[Scavanger]] dagegen sind [[Cyberaugen]] eine gute Möglichkeit, die mit ihrer [[MMVV]]-Infektion einhergehende Blindheit zu überwinden - sofern sie einen [[Straßendoc|Doc]] finden, der bereit ist, einen Ghul zu operieren. Obwohl vor der Infektion vorhandenes Chrom bei der Verwandlung von einem [[Metamenschen|(Meta-)Menschen]] in einen Ghul beschädigt werden kann und [[Bioware]] bei der Umwandlung komplett absorbiert wird, vertragen diese Dualwesen Cyberimplantate erstaunlich problemlos, auch wenn sie sie deutlich mehr Essenz kostet als nicht-Infizierte.
+
+===Cyberware und Paracritter===
+[[Gestaltwandler]] können zwar (wie andere [[Critter]] mit regenerativen Fähigkeiten) [[Deltaware]] aufnehmen, diese verhindert aber, dass sie ihre Befähigung zu Gestaltwandlung verwenden und sperrt sie in ihre aktuelle Form. Entsprechend sind Gestaltwandler auch auf Deltaware nicht sehr gut zu sprechen. 
+
+[[Drakes]] können Cyberware aufnehmen, die aber, wenn sie ihre nichtmenschliche Gestalt annehmen, verschwindet und keine Funktion für sie hat. Interessanterweise - und anders als bei [[Gestaltwandler]]n - formt sich der [[Metamenschen|metamenschliche] Körper des Drake bei der Rückverwandlung wieder samt aller [Augmentierungen]]. 
+
+[[Drachen]] sind unfähig, jede Art von [[Augmentierung]] aufzunehmen. Die einzige bekannte Ausnahme ist der [[Westlicher Drache|westliche Drache]] [[Eliohann]] gewesen, der sich eine speziell für ihn konstruierte [[Datenbuchse]] einsetzen ließ. Leider verstarb der Drache in Folge des [[Crash 2.0|Zweiten Crashs]]. Andere Cyberdrachen sind nicht bekannt, wohl aber andere Experimente, die fehlschlugen. Die meisten Drachen nutzen die [[Matrix]], indem sie [[Trodennetz]]e, die speziell für sie konstruiert wurden, aufsetzen, und verlassen sich ansonsten wie seit Jahrzehntausenden auf ihre Drachenmagie.
+
+===Cyberware und Tiere===
+Tiere und nicht intelligente [[Critter]] sind häufig Empfänger von Cyberware. Es gibt einen blühenden Zweig der Vercyberung aller Arten von Tieren. Nicht nur als Versuchsobjekte und Träger von [[Augmentierungen]] in frühen Alphatestphasen, sondern auch als Endempfänger sind Tiere ähnlich begehrt wie [[Metamenschen]], wobei die Grenze zwischen einem vercyberten Nutztier - etwa einem Wachhund - und einer [[Biodrohne]] mehr und mehr verschwimmt. [[MCT]]s [[Parashield]], [[General Genetics Worldwide]] der [[AG Chemie]] und andere [[Megakonzerne]] forschen hier so ungehemmt, wie sie es sich mit [[Metamenschen]] nicht leisten können (oder vielmehr sollten). 
+
+Mehr hierzu im [[Biodrohnen|entsprechenden Artikel]].
+
+===Cyborgisierung===
+Diese Technologie, die [[Mitsuhama]] mit seinen anthropomorphen Drohnen [[2065]] ins Blickfeld der interessierten Öffentlichkeit rückte, ist die extremstmögliche Form der Vercyberung: die Reduktion eines Metamenschen auf ein Gehirn, das die zentrale Steuereinheit eines [[Drohne]]nkörpers ist.  Neben [[Megakonzern]]en interessieren sich auch [[Unterwelt|Syndikate]] wie die  [[Asociación Vásquez]] für diese Technologie - und diese so sehr, dass sie dafür eine eigene [[Deltaklinik]] aufbauen will. 
+	
+Mehr dazu im [[Cyborg|entsprechenden Artikel]].
+
+===Cybermantie===
+Cybermantie beschreibt extreme [[vercybert|Veryberung]], über den Punkt des tödlichen [[Essenz]]verlusts hinaus, und die chirurgischen Prozeduren und magischen Praktiken, die hierfür erforderlich sind. Die Produkte des Prozesses nennt man [[Cyberzombie]]s. 
+
+Mehr dazu im [[Cybermantie|entsprechenden Artikel]].
+
+==Gesellschaftliche Akzeptanz==
+
+===Sport===
+Cyberware im Sport ist immer noch ein heikles Thema. Jede Sportart geht unterschiedlich damit um. Manche bannen sie ganze manche haben sie umarmt, viele haben sich lange damit schwer getan, und es ist ein stetiges ausbalancieren. Ähnlich wie [[Magie]] und [[Metatyp]] ist Cyberware eine fundamentale Unfairness, und die alten, etablierten Sportarten der [[Fünfte Welt|Fünften Welt]] hatten große Probleme damit, sich an die neuen Gegebenheiten der [[Sechste Welt|Sechsten Welt]] anzupassen.
+
+====Fußball====
+Fußball - der weltweite Lieblingssport Nr. Eins - ist der letzte, fast völlig unvercyberte Sport. Praktisch jede Art von [[Augmentierung]] ist hier verboten. [[Cyberaugen]] ohne unnatürliche Verstärkungen und [[Datenbuchsen]] werden aufgrund ihrer Häufigkeit hingenommen, aber jede Art von aktiver Kommunikations-Cyberware, Augenverbesserungen oder jede Art von Knochen-, Muskel- und Reflex-[[Augmentierungen|Augmentierung]] sind strikt untersagt. 
+
+Dies hat nicht nur damit zu tun, dass [[Fußball]] in den cyberphoben Teilen der Welt ausgesprochen beliebt ist, sondern auch damit, daß der Mythos, dass ein barfuß spielendes Kind aus [[Bogotá]] es im Fußball ganz nach oben schaffen kann, aufrecht erhalten werden soll. 
+
+Mehr im Artikel über [[Fußball]].
+
+====Basketball====
+[[Basketball]] ist die konservativste der großen [[Nordamerika|amerikanischen]] Sportarten. Cyberware wird nur zähneknirschend akzeptiert. [[Smartball]]-Systeme wurden nach langem Kampf {{shx|2047}} zugelassen, aber nichts, was Reichweite oder Körpergröße modifiziert ist gestattet. Mit geringfügigen [[Reaktionsverbesserung]]en, [[Reflexbooster]]n und [[Kunstmuskeln]] hat man sich ebenso zähneknirschend abgefunden.
+
+Mehr im Artikel über [[Basketball]]
+
+====American Football====
+Anders als [[Fußball]] hat sich [[American Football]] voll in die Arme der [[Sechste Welt|Sechsten Welt]] geworfen. [[Augmentierungen]] und [[Metamenschen]] fanden hier sehr früh einen Platz. Die Liga ist immer brutaler geworden, das Feld immer größer, der Ball und die Verletzungen der Spieler immer schwerer. Inzwischen könnte Football durchaus als [[Bloodsport]] durchgehen. 
+
+Mehr im Artikel über [[Football]].
+
+====Baseball====
+Die einstige All-American Pastime ist nicht ganz so weit gegangen wie der große Konkurrent [[Football]], aber hat sich doch in der [[Sechste Welt|Sechsten Welt]] eingefunden. Einiges an Cyberware findet hier Verwendung - neben [[Statsofts]]  und [[Talentleitungen]] gibt es sogar spezielle [[Cyberware]]-Optimierungen für die [[Cybergliedmaßen|Cyberarme]] von Spielern auf unterschiedliche Positionen innerhalb eines Baseballteams - etwa den '''Louisville Slugger''' für den Schlagmann oder '''Yankee Pitcher''' für den Werfer, die nach populären NAL-Teams benannt wurden. Die Modellbezeichnung des von [[Spinrad Industries]] vertriebenen [[SpIn-X]] [[Reaktionsverbesserung|Fastball Pro Reaction Enhancers]] leitet sich ebenfalls von einem [[Baseball]]-Begriff ab.
+
+Mehr dazu im Artikel über [[Baseball]].
+
+===Nordamerika===
+Wenn Cyberware eine Heimat hat, ist es wohl Nordamerika, speziell die UCAS, CAS und Teile der NAN. In keiner anderen Weltgegend ist man technsichen [[Augmentierungen]] gegenüber so aufgeschlossen gewesen wie hier. Selbst das von [[Evo]] mit geprägte [[Russland]] und [[Japan]] kommen da nicht mit. Wenn auch viele Innovationen im Bereich der Cyberware aus [[Asien]] und [[Europa]] kommen mögen, hier fanden sie Interessenten, die sie auf offener Straße zur Schau tragen. Selbst in [[Tir Tairngire]] war Cyberware zumindest geduldet.
+
+Das war in den {{shx|2050ern}}. Mit dem Aufkommen billigerer und besserer [[Bioware|Bio-]] und [[Genware]] in den {{shx|2060ern}} und [[Nanoware]] in den frühen {{shx|2070ern}} verlor das Chrom viel von seinem Glanz und wurde von Coolness zur Wahl der Loser und Langweiler. Mit [[KFS]], das der [[Nanoware]] und [[Genware]] einen empfindlichen Rückschlag verpasste, scheint es aber erneut zu glänzen - und das überall präsente {{shx|2050er|50s}}-Revival hilft dem auch noch.
+
+Der neu aufkommende Policlub der [[Purists]] ist allerdings eine bedenkliche Entwicklung - die sehr in Richtung des katholischen Europa und der islamischen Welt geht.
+
+====NAN====
+Die [[NAN]] sind in ihrer Haltung zu Cyberware gespalten, aber im Allgemeinen die cyberskeptischsten Staaten in Nordamerika. Die größeren Stämme - Salish, Sioux, Cheyenne, Crow, Hopi, Ute - sind alle mehr oder weniger aufgeschlossen gegenüber Cyberware. Das [[PCC]] gilt als am aufgeschlossensten. 
+
+Einige der kleineren und radikaleren Stämme in den NAN verbieten Cyberware - und [[Augmentierungen]] generell. Diese Gesetze sind aber kein Ausdruck spezieller Cyberphobie, sondern um die holistische Integrität der [[Essenz]] ihrer Stammesmitglieder zu wahren. Entsprechend legen sie [[vercybert]]en Besuchern nahe, baldestmöglich zu gehen. Rechtlich gegen sie vorgehen tun aber selbst wirklich radikale Stämme nicht.
+
+===Europa===
+In Sachen Cyberware ist [[Europa]] zweigeteilt - entlang der Grenze der Reformationskriege. Das hat mit der Haltung der [[Römisch-katholische Kirche|römisch-katholischen Kirche]] zu [[Augmentierungen]] zu tun. 
+
+====Das nicht-katholische Europa====
+Die protestantischen Teile [[ADL|Deutschlands]], [[Skandinavien]], die deutsche [[Schweiz]], Teile [[Österreich]]s und große Teile des Osteuropas sind gegenüber Cyberware ähnlich aufgeschlossen wie [[Nordamerika]], auch wenn sie eine pragmtischere Einstellung dazu pflegen. Auch [[Großbritannien|Britannien]] teilt eine eher liberale Einstellung, wenn auch hier sehr viel strenger reguliert wird, was genau an Cyberware getragen werden darf. 
+
+Anders als in [[Nordamerika]] wurde [[KFS]] hier gemischter aufgenommen, und alle [[Augmentierungen]] werden seitdem etwas kritischer gesehen. Niemand wird gelyncht wegen offensichtlicher Cyberware, aber die Toleranz für seltsames Verhalten offenkundig [[Augmentierungen|Augmentierter]] ist spürbar gesunken.
+
+====Das katholische Europa====
+Südeuropa, allen voran [[Spanien]], [[Frankreich]], der katholische Teil [[ADL|Deutschlands]], [[Italien]], [[Polen]], [[Salzburg]] ... hier ist Cyberware, außer aus medizinischen Gründen, oder an [[Johnny Spinrad]], ausgesprochen ungerne gesehen. Das heißt nicht, dass sie verboten wäre, aber sehen will sie hier niemand. Funktionserweiterungen wie [[Riggerkontrollen]] oder [[Datenbuchsen]] sind akzeptabel, solange sie nicht auffällig sind. Aber gebürstetes-Metall-Look-Augen sind eine gute Methode, universell gemieden zu werden. Eine Ausnahme bildete [[Portugal]], das eine offenere Einstellung zu Cyberware hat.
+
+[[KFS]] hat hier alle Vorurteile bestätigt. Es gab Angriffe auf offensichtlich Augmentierte in Teilen Südeuropas, es gibt Edikte des [[Vatikan]]s gegen [[Monaden]], und [[Augmentierungen]] generell werden nun als Sünde und teils Frevel gegen Gott gesehen. Und KFS ist die gerechte Strafe.
+
+====Euro-Elfenstaaten====
+Eine spezielle Stellung nehmen [[Pomorya]] und [[Tír na nÓg]] ein. Die beiden [[Elfenstaaten]] haben aus [[Pfade des Rads|religiösen]] [[Pomorya#Religion:|Gründen]] eine Abneigung gegen Cyberware, dulden sie aber in Nicht-[[Elfen]]. Elfen hingegen müssen damit rechnen, sich häufig für ihren Umgang mit sich selbst rechtfertigen zu müssen. Dass die lokalen Behörden auf solche Abweichler ein sehr genaues Auge werfen, versteht sich von selbst. 
+
+===Asien===
+[[Asien]] ist ein Flickenteppich. Die islamischen Länder sind noch ablehnender gegenüber Cyberware als Südeuropas Katholiken, einige [[Chinesische_Nachfolgestaaten|chinesische Staaten]] das genaue Gegenteil, andere wiederum irgendwo dazwischen. Oft hängt diese Einstellung sehr davon ab, wer in der entsprechenden Gegend gerade das Sagen hat. Der [[Buddhismus]] als Religion ist allerdings cyberpositiver als viele andere Religionen, auch der [[Hinduismus]] ist gegenüber [[Augmentierungen]] nicht ganz ablehnend. 
+
+====Chinas Nachfolgestaaten====
+[[Asien]], insbesondere die Kriegsgebiete der [[Südostasiatische Kriegszone|südostasiatischen Kriegszone]] und der [[chinesische_Nachfolgestaaten|chinesischen Nachfolgestaaten]], ist der größte Markt für [[Omegaware]]. Vor allem die japanischen [[Megakonzerne]] und [[Wuxing]] versilbern hier gerne [[Omegaware]] oder auch fehlerhafte Serien ihrer [[Standardcyberware]]produktion.
+
+====Japan====
+An Cyberpositivität ist [[Japan]] nicht weit hinter [[Nordamerika]] und dem nördlichen [[Europa]] zurück, aber die japanische Kultur der Anpassung und Zurückhaltung verhindert eine derartige Cyberkultur dann doch, auch wenn die Cyberfetisch-Subkultur nirgendwo wilder ist als hier. Japan ist allerdings gegenüber [[KI]]s aufgeschlossener als fast jedes andere Land.
+
+====Korea====
+Ein dynamisches, wiedervereinigtes Land, das versucht, in einer schwierigen Umgebung zwischen dem endlosen Erbfolgekrieg [[China]]s und dem [[Japan|Kaiserreich]] zu überleben, ist [[Korea]] extrem technophil, und das schon seit Jahrzehnten. Kosmetische Operationen sind hier schon lange ein Lebensstil, und auch [[Matrix]] und Cyberware werden entsprechend offen aufgenommen.
+
+===Afrika===
+[[Afrika]] ist noch mehr als [[Asien]] ein Flickenteppich, was Cyberware angeht. Zwischen kompletter Ablehnung von [[Augmentierungen]] in magokratischen Stammesreichen über [[omegaware]]gesättigte Slums bis hin zu geheimnisvollen Technokulten gibt es hier nahezu alles. In den meisten Regionen ist Cyberware aber wirklich schwer zu bekommen, selbst [[Omegaware]].
+
+====Gold- und Elfenbeinküste====
+Entlang der verarmten und desolaten vorderen Goldküste herrschen [[Piraterie]], Gesetzlosigkeit und damit einhergehend eine utilitaristische Ansicht von Cyberware. Hier ist [[Omegaware]] der Standard, und selbst [[Standardcyberware]] begehrt. Viele [[Megakonzerne]] verdienen gut damit, hier ihre Ramschproduktion loszuschlagen. Neben militärischen Waffen sind Deals, die eine Vercyberung in einer Konzerneinrichtung mit einschließen die von vielen [[Freibeuter]]n, die an der [[Stammesland Gold- und Elfenbeinküste|Gold- und Elfenbeinküste]] Piraterie mit "Kaperbriefen" der Konzerne betreiben bevorzugte Form der Bezahlung.
+
+====Äthiomalische Gebiete====
+Auch hier sind staatliche Strukturen noch eher zart ausgebildet, aber mit [[Zion Amalgamated]] gibt es einen bizarren Hybriden aus Konzern und Kult der sich aus einem Klinikzentrum aus Zeiten der [[VITAS]]-Pandemien entwickelt hat und deren Entwicklungen mit dem besten, was die [[Megakonzerne]] haben, mithalten kann. Unter ihnen ist [[Augmentierungen|Augmentierung]], insbesondere [[vercybert|Vercyberung]], ein Lebensstil.
+
+===Islamische Welt===
+In den Ländern der Scharia und damit für viele gläubige Muslime auf der ganzen Welt auch, ist es per {{WP|Fatwa}} verboten, gesundes Gewebe durch Cyberimplantate zu ersetzen. Es gilt als gottlos, den Körper zu verstümmeln. Nichtsdestotrotz schätzt man die Vorteile von guten Prothesen. Die {{WP|Ulama}} streiten sich jedoch über Implantate, die das Leben entscheidend verlängern könnten, wie zum Beispiel ein Herz. 
+
+Dennoch gibt es hier durchaus Unterschieden: während das [[Arabisches Kalifat|Arabische Kalifat]] keine [[Augmentierungen|Augmentierten]] nach [[Mekka]] einlässt, und sich auch der [[Iran]] mit der [[sechste Welt|Sechsten Welt]] sehr schwer tut, sind die [[Türkei]], [[Dubai]] und [[Marokko]] zumindest medizinisch notwendigen [[Augmentierungen]] gegenüber offen und tolerieren sie weitgehend bei Ungläubigen.
+
+==Quellen==
+Dieser Artikel basiert teilweise auf dem Artikel {{Shx|Cyberware}}  in der {{Shx|Hauptseite|Shadowhelix}}, wo er unter [[GNUFDL]] steht. Eine Liste der Autoren kann man <span class="plainlinks">[http://wiki.shadowhelix.de/index.php?title=Cyberware&action=history hier]</span> nachlesen. (Hauptautor des Artikels in seiner derzeitigen Fassung ist Benutzer "[[Benutzer:Richter|Richter]]" (dort: Banutzer "{{Shx|Benutzer:Richter_DL|Richter DL}}").
+
+*[[Grundregelwerk]]e für alle [[Shadowrun: Editionen|Editionen]] von [[Shadowrun]]
+*[[Street Samurai Catalog]] p.91-100 / [[Straßensamurai-Katalog]]
+*[[Cybertechnology]] p.7-58 
+*[[Shadowtech]] p.36-40
+*[[Nordamerika Quellenbuch]] (Enthält Teile der englischen "[[Neo-Anarchist's Guide to North America]]", "[[Native American Nations Volume One]]" und "[[Native American Nations Volume Two]]")
+*[[Germany Sourcebook]] p.16 / [[Deutschland in den Schatten]]
+*[[Tír_na_nÓg_(Quellenbuch)|Tír na nÓg]]
+*[[Die Länder der Verheißung]] S.135, 182, 220, 235 (Enthält Teile der englischen "[[Tír_na_nÓg_(Quellenbuch)|Tír na nÓg]]" und "[[Tír Tairngire (Quellenbuch)|Tír Tairngire]]")
+*[[Walzer, Punks und Schwarzes ICE|Walzer, Punks & Schwarzes ICE]] S.18, 74
+*[[Cyberpirates!]] p.88, 95, 107 / [[Cyberpiraten!]]
+*[[Man and Machine: Cyberware|Man and Machine: Cyberware]] p.8-49, 124-133 / [[Mensch und Maschine 3.01D]]
+*[[Deutschland in den Schatten II]] S.50, 54, 303, 309
+*[[Shadows of Europe]] p.81, 82, 144, 146, 225, 233, 234, 236 / [[Europa in den Schatten]] 
+*[[Shadows of Asia]] p.59, 89, 90, 97, 102, 185, 210, 216, 220, 223, 291 (nur ''englisch'')
+*[[Runner Havens]] S.59 / [[Schattenstädte]] (erweiterte, überarbeitete Neuauflage im {{Pegasus V}})
+*[[Street Magic]] p.23 / [[Straßenmagie]] (erweiterte, überarbeitete Neuauflage im {{Pegasus V}})
+*[[Augmentation]] p.26-49, 148  / [[Bodytech]]
+*[[Unwired]] p.9, 10 / [[Vernetzt]]
+*[[Runner's Companion]] p.75, 78, 85, 87 / [[Runnerkompendium]]
+*[[Vice]] p.35 / [[Unterwelten]]
+*[[Running Wild]] p.26 / [[Wildwechsel - Das Critterdossier]]
+*[[Street Legends]] p.120 / [[Straßenlegenden]]
+*[[Attitude]] p.99, 100, 102, 103, 105 / [[Lifestyle 2073]]
+*[[Reiseführer in die deutschen Schatten]] S.45, 60
+*[[The Way of the Adept]] p.12 / [[Der Weg des Adepten]]
+*[[Damage Control]] S.21 (nur ''englisch'')
+*[[Chrome Flesh]] p.62-93 / [[Bodyshop_(Quellenbuch)|BodyShop]] 
+*[[Howling Shadows]] p.28, 86, 163, 166 / [[Critterkompendium]]
+*[[Shadows in Focus: City by Shadow: Metrópole]] p.26
+*[[Shadows in Focus: Morocco]] (nur ''englisch'')
+
+[[Category:Grundlagen]]
+[[Kategorie:Cyberware| ]]

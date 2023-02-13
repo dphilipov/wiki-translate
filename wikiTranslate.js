@@ -58,24 +58,23 @@ async function getArticleContent(articleTitle) {
 
 async function saveOriginalArticle(pageTitle, pageContent) {
   await fs.mkdir(`./${constants.OUTPUT_FOLDER}/`, { recursive: true });
+  const fileName = `${pageTitle}[ORIGINAL].txt`;
 
+  // If ALLOW_FILE_OVERWRITE is false, skip saving & overwriting the file again
   if (!constants.ALLOW_FILE_OVERWRITE) {
     const files = await fs.readdir(`./${constants.OUTPUT_FOLDER}/`);
 
-    const fileExists = files.some(file => file === `${pageTitle}-original.txt`);
+    const fileExists = files.some(file => file === fileName);
 
     if (fileExists) {
-      console.log('File already exists.');
+      console.log(`File: ${fileName} already exists.`);
       return;
     }
   }
 
   // Save the ORIGINAL version of the page content
-  await fs.writeFile(
-    `${constants.OUTPUT_FOLDER}/${pageTitle}-original.txt`,
-    pageContent
-  );
-  console.log(`File: ${pageTitle}-original.txt saved.`);
+  await fs.writeFile(`${constants.OUTPUT_FOLDER}/${fileName}`, pageContent);
+  console.log(`File: ${fileName}`);
 }
 
 async function translateAndSaveArticle(pageTitle, pageContent) {

@@ -32,7 +32,7 @@ To use this tool:
 Available options are:
 
 1. `create-glossary`: This is optional and is used to create a glossary, which is attached to your DeepL account. The glossary content is defined in the [glossary.js](glossary/glossary.js) file. You can't edit a glossary. Instead you have to make a new one. Read more [here](https://www.deepl.com/docs-api/glossaries/)
-2. `get-articles`: Gets ALL article titles for the target wiki and saves them as a .json file. These titles are then used to get the content of each respective article. **DO NOT try to get all articles from Wikipedia, as it has 6 600 000+ articles and this will require 13 200 requests.** In the case of the German Shadowrun wiki, I already saved them under [articles.js](input/articles.js).
+2. `get-articles`: Gets ALL article titles for the target wiki and saves them as a .json file. These titles are then used to get the content of each respective article. **DO NOT try to get all articles from Wikipedia, as it has 6 600 000+ articles and this will require 13 200 requests.** In the case of the German Shadowrun wiki, I already saved them under [articles.json](input/articles.json).
 3. `wiki-translate`: The main option that you will use - does the actual saving & translating. The behavior can be modified from the [constants.js](./constants.js) file.
 
 #### constants.js

@@ -25,9 +25,10 @@ Their pricing plan is comparable to other similar translation tools (at the time
 
 To use this tool:
 
-1. Clone/download the repo
-2. Install dependencies via `yarn install`
-3. Run `node index.js [option]`
+1. Register for a free DeppL account and add your API key to [constants.js](./constants.js)
+2. Clone/download the repo
+3. Install dependencies via `yarn install`
+4. Run `node index.js [option]`
 
 Available options are:
 

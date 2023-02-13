@@ -9,7 +9,7 @@ The idea for this project was sparked by the desire to bring the [English Shadow
 What this tool does is:
 
 1. Takes the titles of all articles from a target wiki
-2. Uses those titles (or custom ones) to get the content of said articles
+2. Uses those titles (or custom ones) to get the content of said articles (in wikitext)
 3. Translates the content via the [DeepL API](https://www.deepl.com/docs-api)
 4. Saves both the original content & the translated one to files
 

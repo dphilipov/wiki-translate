@@ -88,6 +88,9 @@ async function translateAndSaveArticle(pageTitle, pageContent) {
   );
 
   // Save the TRANSLATED version of the page content
-  await fs.writeFile(`output/${pageTitle}.txt`, result.text);
+  await fs.writeFile(
+    `${constants.OUTPUT_FOLDER}/${pageTitle}.txt`,
+    result.text
+  );
   console.log(`File: ${pageTitle}.txt saved.`);
 }

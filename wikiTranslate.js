@@ -2,6 +2,7 @@ import fetch from 'node-fetch';
 import * as fs from 'fs/promises';
 import * as deepl from 'deepl-node';
 import { constants } from './constants.js';
+import { fileExists } from './utils.js';
 
 const translator = new deepl.Translator(constants.AUTH_KEY);
 
@@ -20,11 +21,21 @@ export async function wikiTranslate() {
         [pageTitle, pageContent] = await getArticleContent(redirectPageTitle);
       }
 
+      await fs.mkdir(constants.OUTPUT_FOLDER, { recursive: true });
+
+      // If ALLOW_FILE_OVERWRITE is false don't overwrite the file
+      if (!constants.ALLOW_FILE_OVERWRITE) {
+        if (await fileExists(pageTitle)) {
+          return;
+        }
+      }
+
       saveOriginalArticle(pageTitle, pageContent);
 
-      // If NO_TRANSLATE is true, skip the translation and save only the original content
+      // If NO_TRANSLATE is true, skip the translation step
       if (!constants.NO_TRANSLATE) {
-        translateAndSaveArticle(pageTitle, pageContent);
+        const translatedPageContent = await translateArticle(pageContent);
+        saveTranslatedArticle(pageTitle, translatedPageContent);
       }
     }
   } catch (err) {
@@ -57,27 +68,14 @@ async function getArticleContent(articleTitle) {
 }
 
 async function saveOriginalArticle(pageTitle, pageContent) {
-  await fs.mkdir(`./${constants.OUTPUT_FOLDER}/`, { recursive: true });
   const fileName = `${pageTitle}[ORIGINAL].txt`;
 
-  // If ALLOW_FILE_OVERWRITE is false, skip saving & overwriting the file again
-  if (!constants.ALLOW_FILE_OVERWRITE) {
-    const files = await fs.readdir(`./${constants.OUTPUT_FOLDER}/`);
-
-    const fileExists = files.some(file => file === fileName);
-
-    if (fileExists) {
-      console.log(`File: ${fileName} already exists.`);
-      return;
-    }
-  }
-
   // Save the ORIGINAL version of the page content
-  await fs.writeFile(`${constants.OUTPUT_FOLDER}/${fileName}`, pageContent);
-  console.log(`File: ${fileName}`);
+  await fs.writeFile(`${constants.OUTPUT_FOLDER}${fileName}`, pageContent);
+  console.log(`File: ${fileName} saved`);
 }
 
-async function translateAndSaveArticle(pageTitle, pageContent) {
+async function translateArticle(pageContent) {
   const result = await translator.translateText(
     pageContent,
     constants.TRANSLATE_FROM_LANGUAGE,
@@ -87,10 +85,16 @@ async function translateAndSaveArticle(pageTitle, pageContent) {
     }
   );
 
+  return result;
+}
+
+async function saveTranslatedArticle(pageTitle, pageContent) {
+  const fileName = `${pageTitle}.txt`;
+
   // Save the TRANSLATED version of the page content
   await fs.writeFile(
-    `${constants.OUTPUT_FOLDER}/${pageTitle}.txt`,
-    result.text
+    `${constants.OUTPUT_FOLDER}${pageTitle}.txt`,
+    pageContent.text
   );
-  console.log(`File: ${pageTitle}.txt saved.`);
+  console.log(`File: ${fileName} saved.`);
 }

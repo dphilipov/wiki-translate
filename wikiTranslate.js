@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import * as fs from 'fs/promises';
 import * as deepl from 'deepl-node';
 import { constants } from './constants.js';
-import { fileExists } from './utils.js';
+import { fileExists, sanitizePageTitle } from './utils.js';
 
 const translator = new deepl.Translator(constants.AUTH_KEY);
 
@@ -20,6 +20,8 @@ export async function wikiTranslate() {
         const redirectPageTitle = pageContent.match(/\[\[(.*?)\]\]/)[1];
         [pageTitle, pageContent] = await getArticleContent(redirectPageTitle);
       }
+
+      pageTitle = sanitizePageTitle(pageTitle);
 
       await fs.mkdir(constants.OUTPUT_FOLDER, { recursive: true });
 
@@ -69,9 +71,11 @@ async function getArticleContent(articleTitle) {
 
 async function saveOriginalArticle(pageTitle, pageContent) {
   const fileName = `${pageTitle}[ORIGINAL].txt`;
+  console.log(`${constants.OUTPUT_FOLDER}${fileName}`);
 
   // Save the ORIGINAL version of the page content
   await fs.writeFile(`${constants.OUTPUT_FOLDER}${fileName}`, pageContent);
+
   console.log(`File: ${fileName} saved`);
 }
 
@@ -93,7 +97,7 @@ async function saveTranslatedArticle(pageTitle, pageContent) {
 
   // Save the TRANSLATED version of the page content
   await fs.writeFile(
-    `${constants.OUTPUT_FOLDER}${pageTitle}.txt`,
+    `${constants.OUTPUT_FOLDER}${fileName}.txt`,
     pageContent.text
   );
   console.log(`File: ${fileName} saved.`);

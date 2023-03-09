@@ -1,4 +1,5 @@
 import * as fs from 'fs/promises';
+import filenamify from 'filenamify';
 import { constants } from './constants.js';
 
 export async function fileExists(pageTitle) {
@@ -16,4 +17,13 @@ export async function fileExists(pageTitle) {
   }
 
   return false;
+}
+
+export function sanitizePageTitle(pageTitle) {
+  // Wrap the title in quotes in order to prevent dot files being hidden on Unix systems
+  if (pageTitle[0] === '.') {
+    pageTitle = `"${pageTitle}"`;
+  }
+
+  return filenamify(pageTitle);
 }

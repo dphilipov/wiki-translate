@@ -28,7 +28,7 @@ export async function wikiTranslate() {
       // If ALLOW_FILE_OVERWRITE is false don't overwrite the file
       if (!constants.ALLOW_FILE_OVERWRITE) {
         if (await fileExists(pageTitle)) {
-          return;
+          continue;
         }
       }
 
@@ -96,9 +96,6 @@ async function saveTranslatedArticle(pageTitle, pageContent) {
   const fileName = `${pageTitle}.txt`;
 
   // Save the TRANSLATED version of the page content
-  await fs.writeFile(
-    `${constants.OUTPUT_FOLDER}${fileName}.txt`,
-    pageContent.text
-  );
+  await fs.writeFile(`${constants.OUTPUT_FOLDER}${fileName}`, pageContent.text);
   console.log(`File: ${fileName} saved.`);
 }

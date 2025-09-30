@@ -80,6 +80,36 @@ async function saveOriginalArticle(pageTitle, pageContent) {
 }
 
 async function translateArticle(pageContent) {
+  if (pageContent.length > constants.SPLIT_TRESHOLD) {
+    for (let i = 0; i <= pageContent.length; i += constants.SPLIT_TRESHOLD) {
+      let translatedContent = '';
+      let result = '';
+
+      const pageContentChunk = pageContent.slice(
+        i,
+        i + constants.SPLIT_TRESHOLD
+      );
+
+      try {
+        result = await translator.translateText(
+          pageContentChunk,
+          constants.TRANSLATE_FROM_LANGUAGE,
+          constants.TRANSLATE_TO_LANGUAGE,
+          {
+            glossary: constants.GLOSSARY_ID,
+          }
+        );
+      } catch (e) {
+        console.log(e);
+        return translatedContent;
+      }
+
+      translatedContent += result;
+    }
+
+    return translatedContent;
+  }
+
   const result = await translator.translateText(
     pageContent,
     constants.TRANSLATE_FROM_LANGUAGE,

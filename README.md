@@ -25,18 +25,19 @@ Their pricing plan is comparable to other similar translation tools (at the time
 
 To use this tool:
 
-1. Register for a free DeppL account and add your API key to [constants.js](./constants.js)
+1. Register for a free DeppL account and add your API key to [constants.ts](./constants.ts)
 2. Clone/download the repo
 3. Install dependencies via `yarn install`
-4. Run `node index.js [option]`
+4. Run `node index.ts [option]`
 
 Available options are:
 
-1. `create-glossary`: This is optional and is used to create a glossary, which is attached to your DeepL account. The glossary content is defined in the [glossary.js](glossary/glossary.js) file. You can't edit a glossary. Instead you have to make a new one. Read more [here](https://www.deepl.com/docs-api/glossaries/)
+1. `create-glossary`: This is optional and is used to create a glossary, which is attached to your DeepL account. The glossary content is defined in the [glossary.ts](glossary/glossary.ts) file. You can't edit a glossary. Instead you have to make a new one. Read more [here](https://www.deepl.com/docs-api/glossaries/)
 2. `get-articles`: Gets ALL article titles for the target wiki and saves them as a .json file. These titles are then used to get the content of each respective article. **DO NOT try to get all articles from Wikipedia, as it has 6 600 000+ articles and this will require 13 200 requests.** In the case of the German Shadowrun wiki, I already saved them under [articles.json](input/articles.json).
-3. `wiki-translate`: The main option that you will use - does the actual saving & translating. The behavior can be modified from the [constants.js](./constants.js) file.
+3. `wiki-translate`: The main option that you will use - does the actual saving & translating. The behavior can be modified from the [constants.ts](./constants.ts) file.
+   - Add `--dry-run` flag to skip translation and only save original content (useful for testing without using DeepL quota): `node index.ts wiki-translate --dry-run`
 
-#### constants.js
+#### constants.ts
 
 `ALLOW_FILE_OVERWRITE:` If false, it will not overwrite a file that already exists when you fetch the same content more than once
 
@@ -46,11 +47,15 @@ Available options are:
 
 `AUTH_KEY:` Your DeepL API key
 
-`NO_TRANSLATE:` If enabled, skips the step where it translates and saves the article content. It will only get and save the original untranslated version of the article. Use this if you only want to do a test run without wasting your DeepL usage.
-
 `GLOSSARY_ID:` Id of the glossary to use. Running the `create-glossary` option outputs the ID. You have to create your own.
 
 `OUTPUT_FOLDER:` Folder for the output. Files will be saved here. If the folder doesn't exist, it will be created by the script
+
+`SPLIT_TRESHOLD:` Max characters per translation request. Split large articles into chunks to stay within DeepL API limits (default: 50,000)
+
+`TRANSLATE_FROM_LANGUAGE:` Translate from this language
+
+`TRANSLATE_TO_LANGUAGE:` Translate to this language
 
 `WIKI_URL:` Url of the wiki you wish to translate. Make sure to include the /api.php part
 

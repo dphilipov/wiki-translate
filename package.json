@@ -1,13 +1,22 @@
 {
   "name": "shadow-scrape",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "start": "tsx index.ts",
+    "type-check": "tsc --noEmit"
+  },
   "dependencies": {
     "deepl-node": "^1.8.0",
     "dotenv": "^16.0.3",
     "filenamify": "^5.1.1",
     "node-fetch": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
   }
 }

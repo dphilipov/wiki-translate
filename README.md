@@ -1,84 +1,282 @@
-# A wiki translation tool
+# Wiki Translation Tool
 
-#### Intro
+A full-stack application for translating MediaWiki-based wikis using the DeepL API, with both web and command-line interfaces.
 
-The idea for this project was sparked by the desire to bring the [English Shadowrun Wiki](https://shadowrun.fandom.com/wiki/Main_Page) at least a bit closer to the quantity & quality of the [German one](https://shadowiki.de/Hauptseite).
+## Overview
 
-> Note: although I want to translate the German Shadowrun wiki, this tool should work for translating any wiki, as they all use the same API. Read below how you can control this.
+The idea for this project was sparked by the desire to bring the [English Shadowrun Wiki](https://shadowrun.fandom.com/wiki/Main_Page) closer to the quantity & quality of the [German one](https://shadowiki.de/Hauptseite).
 
-What this tool does is:
+> **Note:** Although originally created for the German Shadowrun wiki, this tool works with any MediaWiki-based wiki through its standardized API.
 
-1. Takes the titles of all articles from a target wiki
-2. Uses those titles (or custom ones) to get the content of said articles (in wikitext)
-3. Translates the content via the [DeepL API](https://www.deepl.com/docs-api)
-4. Saves both the original content & the translated one to files
+### What it does:
 
-#### Why DeepL
+1. Fetches article titles from any MediaWiki-based wiki
+2. Retrieves article content in wikitext format
+3. Translates content using the [DeepL API](https://www.deepl.com/docs-api)
+4. Saves both original and translated content to local files
 
-According to them, they provide [3x more accurate translations than their closest competitors](https://www.deepl.com/whydeepl/). From my personal experience, this is true - their translations are usually better compared to Google Translate.
+### Why DeepL?
 
-Their pricing plan is comparable to other similar translation tools (at the time of writing) and they have a free plan that gives you 500 000 free characters per month.
+DeepL provides [3x more accurate translations than their closest competitors](https://www.deepl.com/whydeepl/). From personal experience, their translations are superior to Google Translate, and their pricing is competitive with a generous free tier (500,000 characters/month).
 
-#### Usage
+## Features
 
-> You need to have Node.js installed.
+- **Web Interface**: User-friendly UI with real-time progress tracking
+- **CLI Interface**: Scriptable command-line tools for automation
+- **TypeScript**: Full type safety across frontend, backend, and CLI
+- **Real-time Updates**: Server-Sent Events (SSE) for live translation progress
+- **Glossary Support**: Custom terminology management with DeepL glossaries
+- **Smart Chunking**: Automatic splitting of large articles for API compliance
+- **File Management**: Browse, compare, and download translations
+- **Multiple Selection Modes**: Fetch all articles, select by range, or manually specify
 
-This tool can be used in two ways: via a **Web Interface** or via the **Command Line**.
+## Installation
 
-##### Web Interface (Recommended)
+### Prerequisites
+- Node.js (v18 or higher)
+- Yarn package manager
+- DeepL API key ([get a free account](https://www.deepl.com/pro-api))
 
-The web interface provides a user-friendly way to configure and run translations:
+### Setup
 
-1. Clone/download the repo
-2. Install dependencies: `npm run install-all`
-3. Start the app: `npm run dev`
-4. Open your browser to `http://localhost:3000`
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd wiki-translate
+```
 
-The web interface includes:
-- **Configuration Panel**: Set wiki URL, DeepL API key, languages, and options
-- **Article Selection**: Fetch articles from wiki, search/filter, or manually enter titles
-- **Translation Progress**: Real-time progress tracking with live logs
-- **Results Browser**: View and download translated files with side-by-side comparison
-- **Glossary Manager**: View terms and create/update DeepL glossaries
+2. Install dependencies:
+```bash
+yarn install-all
+```
 
-##### Command Line Interface
+3. Create a `.env` file in the root directory:
+```bash
+AUTH_KEY=your-deepl-api-key-here
+```
 
-For automated workflows or scripting:
+## Usage
 
-1. Register for a free DeepL account and add your API key to `.env` file
-2. Clone/download the repo
-3. Install dependencies via `yarn install`
-4. Run `node index.ts [option]`
+### Web Interface (Recommended)
 
-Available options:
+Start the development server:
+```bash
+yarn dev
+```
 
-1. `create-glossary`: Create a glossary attached to your DeepL account. The glossary content is defined in the [glossary.ts](glossary/glossary.ts) file. Read more [here](https://www.deepl.com/docs-api/glossaries/)
-2. `get-articles`: Gets ALL article titles for the target wiki and saves them as a .json file. **DO NOT try to get all articles from Wikipedia, as it has 6 600 000+ articles.**
-3. `wiki-translate`: Does the actual saving & translating. Behavior can be modified from the [constants.ts](./constants.ts) file.
-   - Add `--dry-run` flag to skip translation and only save original content: `node index.ts wiki-translate --dry-run`
+Then open your browser to:
+- **Frontend:** http://localhost:3000
+- **Backend API:** http://localhost:3001
 
-#### constants.ts
+#### Web Interface Features:
 
-`ALLOW_FILE_OVERWRITE:` If false, it will not overwrite a file that already exists when you fetch the same content more than once
+- **Configuration Panel**
+  - Set wiki URL with presets (Shadowhelix, Wikipedia, etc.)
+  - Configure DeepL API key with validation
+  - Select source and target languages
+  - Adjust output settings and chunking threshold
+  - Enable glossary support
+  - Dry-run mode for testing
 
-`ARTICLE_TITLES:` A list of all the article titles you want to get the content of. For example: ['.26k', 'Dunkelzahn', 'Toxischer Geist']. Overrides ARTICLE_TITLES_RANGE
+- **Article Selection**
+  - Fetch all articles from any wiki
+  - Search and filter articles
+  - Select articles by range
+  - Manually enter article titles
+  - Bulk select/deselect
 
-`ARTICLE_TITLES_RANGE:` A range of articles to translate based on article index. Has no effect if a list of titles is added to ARTICLE_TITLES. Control this via `TRANSLATE_ARTICLE_START` and `TRANSLATE_ARTICLE_END`
+- **Translation Progress**
+  - Real-time progress tracking
+  - Live translation logs
+  - Current article indicator
+  - Success/error counts
+  - Stop translation capability
 
-`AUTH_KEY:` Your DeepL API key
+- **Results Browser**
+  - List all translated files
+  - Side-by-side comparison view
+  - Search translated files
+  - Download individual files
 
-`GLOSSARY_ID:` Id of the glossary to use. Running the `create-glossary` option outputs the ID. You have to create your own.
+- **Glossary Manager**
+  - View glossary terms
+  - Create/update DeepL glossaries
+  - Sync with DeepL account
 
-`OUTPUT_FOLDER:` Folder for the output. Files will be saved here. If the folder doesn't exist, it will be created by the script
+### Command Line Interface
 
-`SPLIT_TRESHOLD:` Max characters per translation request. Split large articles into chunks to stay within DeepL API limits (default: 50,000)
+For automated workflows and scripting:
 
-`TRANSLATE_FROM_LANGUAGE:` Translate from this language
+```bash
+# Translate articles
+yarn start wiki-translate
 
-`TRANSLATE_TO_LANGUAGE:` Translate to this language
+# Dry run (fetch only, no translation)
+yarn start wiki-translate --dry-run
 
-`WIKI_URL:` Url of the wiki you wish to translate. Make sure to include the /api.php part
+# Fetch all article titles from wiki
+yarn start get-articles
 
-`TRANSLATE_ARTICLE_START:` Start translating from this article index
+# Create/update DeepL glossary
+yarn start create-glossary
+```
 
-`TRANSLATE_ARTICLE_END:` End translating at this index (not including). Can be 'all' to fetch all articles.
+## Configuration
+
+Edit `src/lib/constants.ts` to configure default behavior:
+
+### Key Settings:
+
+**`ALLOW_FILE_OVERWRITE`**
+If `false`, won't overwrite existing files when fetching the same content multiple times.
+
+**`ARTICLE_TITLES`**
+Array of specific article titles to translate. Example: `['.26k', 'Dunkelzahn', 'Toxischer Geist']`
+Overrides `ARTICLE_TITLES_RANGE` when set.
+
+**`ARTICLE_TITLES_RANGE`**
+Range-based article selection controlled by `TRANSLATE_ARTICLE_START` and `TRANSLATE_ARTICLE_END`.
+Only active when `ARTICLE_TITLES` is empty.
+
+**`AUTH_KEY`**
+Your DeepL API key (loaded from `.env` file).
+
+**`GLOSSARY_ID`**
+ID of the DeepL glossary to use. Create one with the `create-glossary` command.
+
+**`OUTPUT_FOLDER`**
+Folder for output files (default: `output`). Created automatically if it doesn't exist.
+
+**`SPLIT_TRESHOLD`**
+Maximum characters per translation request (default: 50,000).
+Large articles are automatically split into chunks to comply with DeepL API limits.
+
+**`TRANSLATE_FROM_LANGUAGE`**
+Source language code (e.g., `DE` for German).
+
+**`TRANSLATE_TO_LANGUAGE`**
+Target language code (e.g., `EN-US` for American English).
+
+**`WIKI_URL`**
+Full URL to the wiki's API endpoint (must include `/api.php`).
+Example: `https://shadowhelix.de/api.php`
+
+**`TRANSLATE_ARTICLE_START`**
+Starting article index for range-based selection.
+
+**`TRANSLATE_ARTICLE_END`**
+Ending article index (exclusive) or `'all'` to translate all articles.
+
+## Project Structure
+
+```
+wiki-translate/
+├── src/                    # Shared server-side code
+│   ├── lib/                # Core utilities (constants, helpers, logger, utils)
+│   ├── services/           # Business logic (glossary, wiki translation)
+│   ├── types/              # Shared TypeScript types
+│   └── cli/                # CLI entry point
+├── server/                 # Express API backend
+│   ├── routes/             # API endpoints (translation, wiki, glossary, files)
+│   ├── index.ts            # Express app
+│   └── types.ts            # API request types
+├── client/                 # React frontend (Vite + TypeScript)
+│   └── src/
+│       ├── components/     # React components
+│       ├── styles/         # SCSS stylesheets
+│       └── types.ts        # Frontend types
+├── input/                  # Cached article lists
+├── output/                 # Translation output files
+└── package.json            # Dependencies and scripts
+```
+
+## Development
+
+### Available Scripts
+
+```bash
+yarn dev              # Start both server and client in development mode
+yarn server           # Start only the Express API server
+yarn client           # Start only the Vite dev server
+yarn build            # Build client for production
+yarn start            # Run CLI commands
+yarn type-check       # TypeScript type checking
+yarn install-all      # Install all dependencies (root + client)
+```
+
+### Technology Stack
+
+**Frontend:**
+- React 18 with TypeScript
+- Vite for build tooling
+- SCSS for styling
+- react-toastify for notifications
+
+**Backend:**
+- Express.js with TypeScript
+- Server-Sent Events (SSE) for real-time updates
+- tsx for TypeScript execution
+
+**Shared:**
+- Axios for HTTP requests
+- DeepL Node.js SDK
+- TypeScript strict mode
+
+## Output Files
+
+Translations are saved in the configured output folder (default: `output/`):
+
+- **Original files:** `[PageTitle][ORIGINAL].txt`
+- **Translated files:** `[PageTitle].txt`
+
+Filenames are sanitized for cross-platform compatibility.
+
+## API Endpoints
+
+The Express server exposes the following REST API:
+
+### Translation
+- `POST /api/translation/start` - Start translation with SSE
+- `POST /api/translation/stop/:sessionId` - Stop translation
+- `POST /api/translation/validate-key` - Validate DeepL API key
+
+### Wiki
+- `POST /api/wiki/fetch-articles` - Fetch all articles
+- `GET /api/wiki/articles` - Get cached article list
+
+### Glossary
+- `GET /api/glossary` - Get glossary terms
+- `POST /api/glossary/create` - Create DeepL glossary
+
+### Files
+- `GET /api/files` - List output files
+- `GET /api/files/content` - Get file content
+- `GET /api/files/download` - Download file
+
+## Tips & Best Practices
+
+1. **Test with Dry Run:** Always use `--dry-run` first to verify article selection before translating.
+
+2. **API Rate Limits:** The free DeepL tier has a 500,000 character/month limit. Large wikis may require a paid plan.
+
+3. **Glossary First:** Create and test your glossary before translating to ensure consistent terminology.
+
+4. **Chunk Size:** Adjust `SPLIT_TRESHOLD` if you encounter API errors with large articles.
+
+5. **Avoid Wikipedia:** Don't try to fetch all articles from Wikipedia (6,600,000+ articles). Use specific article lists instead.
+
+6. **File Overwrite:** Enable `ALLOW_FILE_OVERWRITE` with caution to avoid losing manual edits.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
+## License
+
+MIT
+
+## Acknowledgments
+
+- [DeepL](https://www.deepl.com/) for their excellent translation API
+- [MediaWiki](https://www.mediawiki.org/) for their comprehensive API
+- [Shadowhelix](https://shadowhelix.de/) and [Shadowiki](https://shadowiki.de/) for inspiration

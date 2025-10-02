@@ -1,6 +1,7 @@
 import axios from 'axios';
 import * as fs from 'fs/promises';
 import { constants } from '../constants.js';
+import { extractWikiName } from '../utils.js';
 import type { WikiArticle } from '../types';
 
 export async function getArticles(): Promise<void> {
@@ -22,11 +23,11 @@ export async function getArticles(): Promise<void> {
     const articles: WikiArticle[] = jsonResponse.query.allpages;
     data = [...data, ...articles];
 
-    if (!jsonResponse['query-continue']) {
+    if (!jsonResponse.continue) {
       break;
     }
 
-    queryContinue = jsonResponse['query-continue'].allpages.apcontinue;
+    queryContinue = jsonResponse.continue.apcontinue;
   }
 
   // Adds an index to each article
@@ -36,7 +37,10 @@ export async function getArticles(): Promise<void> {
     return x;
   });
 
-  await fs.writeFile('input/articles.json', JSON.stringify(data));
+  const wikiName = extractWikiName(constants.WIKI_URL);
+  const filename = `input/${wikiName}-articles.json`;
 
-  console.log(`${data.length} articles saved to input/articles.json`);
+  await fs.writeFile(filename, JSON.stringify(data));
+
+  console.log(`${data.length} articles saved to ${filename}`);
 }

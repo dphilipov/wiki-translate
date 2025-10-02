@@ -38,3 +38,10 @@ export function sanitizePageTitle(pageTitle: string): string {
 
   return filenamify(pageTitle);
 }
+
+export function extractWikiName(wikiUrl: string): string {
+  // Extract wiki name from URL (e.g., "shadowhelix" from "https://www.shadowhelix.de/api.php")
+  const url = new URL(wikiUrl);
+  const hostnameParts = url.hostname.split('.');
+  return hostnameParts[hostnameParts.length - 2]; // Get domain name before TLD
+}

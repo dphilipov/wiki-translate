@@ -4,23 +4,24 @@ import { createGlossary } from './glossary/createGlossary.js';
 
 const cliArguments = process.argv.slice(2);
 
-const commands = {
+const commandsList: Record<string, () => Promise<void>> = {
   'wiki-translate': () => wikiTranslate(),
   'get-articles': () => getArticles(),
   'create-glossary': () => createGlossary(),
 };
 
 if (cliArguments.length) {
-  if (!Object.keys(commands).includes(cliArguments[0])) {
+  const command = cliArguments[0];
+  if (!Object.keys(commandsList).includes(command)) {
     console.log(
-      `ERROR: Invalid command! Use one of: ${Object.keys(commands).join(' | ')}`
+      `ERROR: Invalid command! Use one of: ${Object.keys(commandsList).join(' | ')}`
     );
     process.exit();
   }
 
-  commands[cliArguments[0]]();
+  commandsList[command]();
 } else {
   console.log(
-    `ERROR: Please input a command: ${Object.keys(commands).join(' | ')}`
+    `ERROR: Please input a command: ${Object.keys(commandsList).join(' | ')}`
   );
 }

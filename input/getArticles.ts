@@ -1,10 +1,11 @@
 import fetch from 'node-fetch';
 import * as fs from 'fs/promises';
 import { constants } from '../constants.js';
+import type { WikiArticle } from '../types';
 
-export async function getArticles() {
+export async function getArticles(): Promise<void> {
   let queryContinue = '';
-  let data = [];
+  let data: WikiArticle[] = [];
 
   while (true) {
     const params = {
@@ -19,9 +20,9 @@ export async function getArticles() {
       `${constants.WIKI_URL}?${new URLSearchParams(params)}`
     );
 
-    const jsonResponse = await response.json();
+    const jsonResponse: any = await response.json();
 
-    const articles = jsonResponse.query.allpages;
+    const articles: WikiArticle[] = jsonResponse.query.allpages;
     data = [...data, ...articles];
 
     if (!jsonResponse['query-continue']) {

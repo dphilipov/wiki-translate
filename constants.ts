@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import * as fs from 'fs';
+import * as path from 'path';
 import type { WikiArticle } from './types';
 import { extractWikiName } from './utils.js';
 dotenv.config();
@@ -11,7 +12,7 @@ const WIKI_URL = 'https://www.shadowhelix.de/api.php'; // Url of the wiki you wi
 
 function loadArticles(): WikiArticle[] {
   const wikiName = extractWikiName(WIKI_URL);
-  const articlesPath = `./input/${wikiName}-articles.json`;
+  const articlesPath = path.join('.', 'input', `${wikiName}-articles.json`);
 
   try {
     const articlesData = fs.readFileSync(articlesPath, 'utf-8');

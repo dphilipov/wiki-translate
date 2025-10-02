@@ -1,19 +1,18 @@
 import axios from 'axios';
 import * as fs from 'fs/promises';
+import * as path from 'path';
 import * as deepl from 'deepl-node';
 import { constants } from './constants.js';
-import { fileExists, sanitizePageTitle } from './utils.js';
+import { fileExists, sanitizePageTitle, validateConfig } from './utils.js';
+import type { MediaWikiParseResponse } from './types';
 
-const translator = new deepl.DeepLClient(constants.AUTH_KEY || '');
+let translator: deepl.DeepLClient;
 
 export async function wikiTranslate(options: { dryRun?: boolean } = {}) {
   const { dryRun = false } = options;
 
-  if (!constants.AUTH_KEY) {
-    throw new Error(
-      'AUTH_KEY is missing. Please add your DeepL API key to the .env file.'
-    );
-  }
+  validateConfig();
+  translator = new deepl.DeepLClient(constants.AUTH_KEY!);
 
   const articlesToTranslate = constants.ARTICLE_TITLES.length
     ? constants.ARTICLE_TITLES
@@ -69,7 +68,7 @@ async function getArticleContent(
     redirects: '1',
   };
 
-  const response = await axios.get(constants.WIKI_URL, { params });
+  const response = await axios.get<MediaWikiParseResponse>(constants.WIKI_URL, { params });
   const jsonResponse = response.data;
 
   if (jsonResponse.error) {
@@ -87,10 +86,11 @@ async function saveOriginalArticle(
   pageContent: string
 ): Promise<void> {
   const fileName = `${pageTitle}[ORIGINAL].txt`;
-  console.log(`${constants.OUTPUT_FOLDER}/${fileName}`);
+  const filePath = path.join(constants.OUTPUT_FOLDER, fileName);
+  console.log(filePath);
 
   // Save the ORIGINAL version of the page content
-  await fs.writeFile(`${constants.OUTPUT_FOLDER}/${fileName}`, pageContent);
+  await fs.writeFile(filePath, pageContent);
 
   console.log(`File: ${fileName} saved`);
 }
@@ -145,11 +145,9 @@ async function saveTranslatedArticle(
   pageContent: deepl.TextResult
 ): Promise<void> {
   const fileName = `${pageTitle}.txt`;
+  const filePath = path.join(constants.OUTPUT_FOLDER, fileName);
 
   // Save the TRANSLATED version of the page content
-  await fs.writeFile(
-    `${constants.OUTPUT_FOLDER}/${fileName}`,
-    pageContent.text
-  );
+  await fs.writeFile(filePath, pageContent.text);
   console.log(`File: ${fileName} saved.`);
 }

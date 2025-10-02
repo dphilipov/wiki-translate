@@ -23,19 +23,39 @@ Their pricing plan is comparable to other similar translation tools (at the time
 
 > You need to have Node.js installed.
 
-To use this tool:
+This tool can be used in two ways: via a **Web Interface** or via the **Command Line**.
 
-1. Register for a free DeppL account and add your API key to [constants.ts](./constants.ts)
+##### Web Interface (Recommended)
+
+The web interface provides a user-friendly way to configure and run translations:
+
+1. Clone/download the repo
+2. Install dependencies: `npm run install-all`
+3. Start the app: `npm run dev`
+4. Open your browser to `http://localhost:3000`
+
+The web interface includes:
+- **Configuration Panel**: Set wiki URL, DeepL API key, languages, and options
+- **Article Selection**: Fetch articles from wiki, search/filter, or manually enter titles
+- **Translation Progress**: Real-time progress tracking with live logs
+- **Results Browser**: View and download translated files with side-by-side comparison
+- **Glossary Manager**: View terms and create/update DeepL glossaries
+
+##### Command Line Interface
+
+For automated workflows or scripting:
+
+1. Register for a free DeepL account and add your API key to `.env` file
 2. Clone/download the repo
 3. Install dependencies via `yarn install`
 4. Run `node index.ts [option]`
 
-Available options are:
+Available options:
 
-1. `create-glossary`: This is optional and is used to create a glossary, which is attached to your DeepL account. The glossary content is defined in the [glossary.ts](glossary/glossary.ts) file. You can't edit a glossary. Instead you have to make a new one. Read more [here](https://www.deepl.com/docs-api/glossaries/)
-2. `get-articles`: Gets ALL article titles for the target wiki and saves them as a .json file. These titles are then used to get the content of each respective article. **DO NOT try to get all articles from Wikipedia, as it has 6 600 000+ articles and this will require 13 200 requests.** In the case of the German Shadowrun wiki, I already saved them under [articles.json](input/articles.json).
-3. `wiki-translate`: The main option that you will use - does the actual saving & translating. The behavior can be modified from the [constants.ts](./constants.ts) file.
-   - Add `--dry-run` flag to skip translation and only save original content (useful for testing without using DeepL quota): `node index.ts wiki-translate --dry-run`
+1. `create-glossary`: Create a glossary attached to your DeepL account. The glossary content is defined in the [glossary.ts](glossary/glossary.ts) file. Read more [here](https://www.deepl.com/docs-api/glossaries/)
+2. `get-articles`: Gets ALL article titles for the target wiki and saves them as a .json file. **DO NOT try to get all articles from Wikipedia, as it has 6 600 000+ articles.**
+3. `wiki-translate`: Does the actual saving & translating. Behavior can be modified from the [constants.ts](./constants.ts) file.
+   - Add `--dry-run` flag to skip translation and only save original content: `node index.ts wiki-translate --dry-run`
 
 #### constants.ts
 

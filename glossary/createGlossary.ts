@@ -9,7 +9,7 @@ export async function createGlossary() {
     );
   }
 
-  const translator = new deepl.Translator(constants.AUTH_KEY);
+  const translator = new deepl.DeepLClient(constants.AUTH_KEY);
   const entries = new deepl.GlossaryEntries({
     entries: glossary,
   });

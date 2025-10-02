@@ -2,6 +2,14 @@ import * as fs from 'fs/promises';
 import filenamify from 'filenamify';
 import { constants } from './constants.js';
 
+export function validateConfig(): void {
+  if (!constants.AUTH_KEY) {
+    throw new Error(
+      'AUTH_KEY is missing. Please add your DeepL API key to the .env file.'
+    );
+  }
+}
+
 export async function fileExists(pageTitle: string): Promise<boolean> {
   try {
     const files = await fs.readdir(constants.OUTPUT_FOLDER);

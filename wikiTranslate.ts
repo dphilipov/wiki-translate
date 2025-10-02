@@ -24,14 +24,6 @@ export async function wikiTranslate() {
     try {
       let [pageTitle, pageContent] = await getArticleContent(articleTitle);
 
-      // If the page is a redirect, fetch the content of the new page
-      const redirectMatch = pageContent.match(/^#REDIRECT\s*\[\[(.*?)\]\]/i);
-      if (redirectMatch) {
-        const redirectPageTitle = redirectMatch[1];
-        console.log(`Following redirect: ${articleTitle} -> ${redirectPageTitle}`);
-        [pageTitle, pageContent] = await getArticleContent(redirectPageTitle);
-      }
-
       pageTitle = sanitizePageTitle(pageTitle);
 
       await fs.mkdir(constants.OUTPUT_FOLDER, { recursive: true });
@@ -70,6 +62,7 @@ async function getArticleContent(articleTitle: string): Promise<[string, string]
     prop: 'wikitext',
     format: 'json',
     page: articleTitle,
+    redirects: '1',
   };
 
   const response = await axios.get(constants.WIKI_URL, { params });

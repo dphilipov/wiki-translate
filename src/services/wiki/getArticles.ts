@@ -1,12 +1,13 @@
 import axios from 'axios';
 import * as fs from 'fs/promises';
 import * as path from 'path';
-import { constants } from '../constants.js';
-import { extractWikiName } from '../utils.js';
-import type { WikiArticle, MediaWikiAllPagesResponse } from '../types';
-import { logger } from '../logger.js';
+import { constants } from '../../lib/constants';
+import { extractWikiName } from '../../lib/utils';
+import type { WikiArticle, MediaWikiAllPagesResponse } from '../../types';
+import { logger } from '../../lib/logger';
 
-export async function getArticles(): Promise<void> {
+export async function getArticles(wikiUrl?: string): Promise<void> {
+  const apiUrl = wikiUrl || constants.WIKI_URL;
   let queryContinue = '';
   let data: WikiArticle[] = [];
 
@@ -19,7 +20,7 @@ export async function getArticles(): Promise<void> {
       apcontinue: queryContinue,
     };
 
-    const response = await axios.get<MediaWikiAllPagesResponse>(constants.WIKI_URL, { params });
+    const response = await axios.get<MediaWikiAllPagesResponse>(apiUrl, { params });
     const jsonResponse = response.data;
 
     const articles: WikiArticle[] = jsonResponse.query.allpages;
@@ -39,7 +40,7 @@ export async function getArticles(): Promise<void> {
     return x;
   });
 
-  const wikiName = extractWikiName(constants.WIKI_URL);
+  const wikiName = extractWikiName(apiUrl);
   const filename = path.join('input', `${wikiName}-articles.json`);
 
   await fs.writeFile(filename, JSON.stringify(data));

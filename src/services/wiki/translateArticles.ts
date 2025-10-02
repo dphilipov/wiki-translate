@@ -2,10 +2,10 @@ import axios from 'axios';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import * as deepl from 'deepl-node';
-import { constants } from './constants.js';
-import { fileExists, sanitizePageTitle, validateConfig } from './utils.js';
-import type { MediaWikiParseResponse } from './types';
-import { logger } from './logger.js';
+import { constants } from '../../lib/constants';
+import { fileExists, sanitizePageTitle, validateConfig } from '../../lib/utils';
+import type { MediaWikiParseResponse } from '../../types';
+import { logger } from '../../lib/logger';
 
 let translator: deepl.DeepLClient;
 

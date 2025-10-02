@@ -1,7 +1,7 @@
-import { wikiTranslate } from './wikiTranslate.js';
-import { getArticles } from './input/getArticles.js';
-import { createGlossary } from './glossary/createGlossary.js';
-import { logger } from './logger.js';
+import { wikiTranslate } from '../services/wiki/translateArticles';
+import { getArticles } from '../services/wiki/getArticles';
+import { createGlossary } from '../services/glossary/createGlossary';
+import { logger } from '../lib/logger';
 
 const cliArguments = process.argv.slice(2);
 

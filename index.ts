@@ -4,16 +4,15 @@ import { createGlossary } from './glossary/createGlossary.js';
 
 const cliArguments = process.argv.slice(2);
 
+const commandsList: Record<string, (flags?: string[]) => Promise<void>> = {
+  'wiki-translate': (flags) => wikiTranslate({ dryRun: flags?.includes('--dry-run') }),
+  'get-articles': () => getArticles(),
+  'create-glossary': () => createGlossary(),
+};
+
 if (cliArguments.length) {
   const command = cliArguments[0];
   const flags = cliArguments.slice(1);
-  const dryRun = flags.includes('--dry-run');
-
-  const commandsList: Record<string, () => Promise<void>> = {
-    'wiki-translate': () => wikiTranslate({ dryRun }),
-    'get-articles': () => getArticles(),
-    'create-glossary': () => createGlossary(),
-  };
 
   if (!Object.keys(commandsList).includes(command)) {
     console.log(
@@ -22,7 +21,7 @@ if (cliArguments.length) {
     process.exit();
   }
 
-  commandsList[command]();
+  commandsList[command](flags);
 } else {
   console.log(
     `ERROR: Please input a command: ${Object.keys(commandsList).join(' | ')}`

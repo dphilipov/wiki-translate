@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import axios from 'axios';
 import * as fs from 'fs/promises';
 import { constants } from '../constants.js';
 import type { WikiArticle } from '../types';
@@ -16,11 +16,8 @@ export async function getArticles(): Promise<void> {
       apcontinue: queryContinue,
     };
 
-    const response = await fetch(
-      `${constants.WIKI_URL}?${new URLSearchParams(params)}`
-    );
-
-    const jsonResponse: any = await response.json();
+    const response = await axios.get(constants.WIKI_URL, { params });
+    const jsonResponse: any = response.data;
 
     const articles: WikiArticle[] = jsonResponse.query.allpages;
     data = [...data, ...articles];

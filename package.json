@@ -9,10 +9,10 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "deepl-node": "^1.8.0",
+    "axios": "^1.12.2",
+    "deepl-node": "^1.19.0",
     "dotenv": "^16.0.3",
-    "filenamify": "^5.1.1",
-    "node-fetch": "^3.3.0"
+    "filenamify": "^5.1.1"
   },
   "devDependencies": {
     "@types/node": "^24.6.2",

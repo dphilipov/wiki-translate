@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import axios from 'axios';
 import * as fs from 'fs/promises';
 import * as deepl from 'deepl-node';
 import { constants } from './constants.js';
@@ -72,22 +72,8 @@ async function getArticleContent(articleTitle: string): Promise<[string, string]
     page: articleTitle,
   };
 
-  const response = await fetch(
-    `${constants.WIKI_URL}?${new URLSearchParams(params)}`
-  );
-
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-  }
-
-  const text = await response.text();
-  let jsonResponse: any;
-
-  try {
-    jsonResponse = JSON.parse(text);
-  } catch (err) {
-    throw new Error(`Invalid JSON response: ${text.substring(0, 200)}`);
-  }
+  const response = await axios.get(constants.WIKI_URL, { params });
+  const jsonResponse = response.data;
 
   if (jsonResponse.error) {
     throw new Error(`${articleTitle} -> ${jsonResponse.error.info}`);

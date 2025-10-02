@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import { EventEmitter } from 'events';
 import axios from 'axios';
+import * as deepl from 'deepl-node';
 import { callDeepLAPI } from '../../src/lib/helpers';
 import { constants } from '../../src/lib/constants';
 import { fileExists, sanitizePageTitle } from '../../src/lib/utils';
@@ -309,6 +310,30 @@ router.post('/validate-key', async (req: ValidateKeyRequest, res: Response) => {
     res.json({ valid: true });
   } catch (error) {
     res.json({ valid: false, error: (error as Error).message });
+  }
+});
+
+// POST /api/translation/usage - Get DeepL usage stats
+router.post('/usage', async (req: Request, res: Response) => {
+  const { authKey } = req.body;
+
+  if (!authKey) {
+    return res.status(400).json({ error: 'API key is required' });
+  }
+
+  try {
+    const translator = new deepl.DeepLClient(authKey);
+    const usage = await translator.getUsage();
+
+    res.json({
+      count: usage.character?.count || 0,
+      limit: usage.character?.limit || 0,
+      remaining: (usage.character?.limit || 0) - (usage.character?.count || 0),
+      percentage: usage.character ?
+        ((usage.character.count / usage.character.limit) * 100).toFixed(2) : '0'
+    });
+  } catch (error) {
+    res.status(500).json({ error: (error as Error).message });
   }
 });
 

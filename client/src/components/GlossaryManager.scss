@@ -1,0 +1,87 @@
+@import '../styles/variables';
+
+.glossary-manager {
+  background: $surface;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: $shadow;
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .glossary-info {
+    padding: 1rem;
+    background: lighten($primary-color, 45%);
+    border-left: 3px solid $primary-color;
+    border-radius: 0.375rem;
+    margin-bottom: 1.5rem;
+
+    p {
+      color: $text-secondary;
+    }
+  }
+
+  .glossary-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .glossary-table-container {
+    overflow-x: auto;
+
+    .glossary-table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        background: $background;
+
+        th {
+          padding: 0.75rem;
+          text-align: left;
+          font-weight: 600;
+          border-bottom: 2px solid $border;
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid $border;
+
+          &:hover {
+            background: $background;
+          }
+
+          td {
+            padding: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  .no-terms {
+    text-align: center;
+    padding: 2rem;
+    color: $text-secondary;
+  }
+
+  .glossary-note {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: $background;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    color: $text-secondary;
+
+    code {
+      background: white;
+      padding: 0.125rem 0.375rem;
+      border-radius: 0.25rem;
+      font-family: 'Monaco', 'Menlo', monospace;
+    }
+  }
+}

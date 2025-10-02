@@ -1,0 +1,140 @@
+@import './variables';
+
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica', 'Arial', sans-serif;
+  background: $background;
+  color: $text-primary;
+  line-height: 1.5;
+}
+
+// App layout
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: $surface;
+  border-bottom: 1px solid $border;
+  padding: 1rem 2rem;
+  box-shadow: $shadow;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background: transparent;
+      color: $text-secondary;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      font-weight: 500;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #fff;
+      }
+
+      &.active {
+        color: $primary-color;
+        border-bottom-color: $primary-color;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Common components
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background: $primary-color;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover:not(:disabled) {
+    background: $primary-hover;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.start-btn {
+    background: $success-color;
+    &:hover:not(:disabled) {
+      background: darken($success-color, 10%);
+    }
+  }
+
+  &.stop-btn {
+    background: $error-color;
+    &:hover:not(:disabled) {
+      background: darken($error-color, 10%);
+    }
+  }
+
+  &.validate-btn {
+    &.valid {
+      background: $success-color;
+    }
+    &.invalid {
+      background: $error-color;
+    }
+  }
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid $border;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  transition: border-color 0.2s;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+  }
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
+}

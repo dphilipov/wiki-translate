@@ -31,10 +31,19 @@ interface ConfigPanelProps {
   setConfig: (config: Config) => void;
 }
 
+interface UsageData {
+  count: number;
+  limit: number;
+  remaining: number;
+  percentage: string;
+}
+
 function ConfigPanel({ config, setConfig }: ConfigPanelProps) {
   const [apiKeyValid, setApiKeyValid] = useState<boolean | null>(null);
   const [validating, setValidating] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [usage, setUsage] = useState<UsageData | null>(null);
+  const [fetchingUsage, setFetchingUsage] = useState(false);
 
   const handlePresetChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const preset = WIKI_PRESETS.find(p => p.name === e.target.value);
@@ -72,6 +81,37 @@ function ConfigPanel({ config, setConfig }: ConfigPanelProps) {
       toast.error('Failed to validate API key');
     } finally {
       setValidating(false);
+    }
+  };
+
+  const fetchUsage = async () => {
+    if (!config.authKey) {
+      toast.error('Please enter an API key');
+      return;
+    }
+
+    setFetchingUsage(true);
+    try {
+      const response = await fetch('/api/translation/usage', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ authKey: config.authKey }),
+      });
+
+      const data = await response.json();
+
+      if (data.error) {
+        toast.error('Failed to fetch usage');
+        setUsage(null);
+      } else {
+        setUsage(data);
+      }
+    } catch (error) {
+      console.error('Error fetching usage:', error);
+      toast.error('Failed to fetch usage');
+      setUsage(null);
+    } finally {
+      setFetchingUsage(false);
     }
   };
 
@@ -128,6 +168,7 @@ function ConfigPanel({ config, setConfig }: ConfigPanelProps) {
                 onChange={e => {
                   setConfig({ ...config, authKey: e.target.value });
                   setApiKeyValid(null);
+                  setUsage(null);
                 }}
                 placeholder="Enter your DeepL API key"
               />
@@ -150,6 +191,48 @@ function ConfigPanel({ config, setConfig }: ConfigPanelProps) {
                   ? '✗'
                   : 'Validate'}
               </button>
+            </div>
+            <div className="usage-info">
+              {usage ? (
+                <>
+                  <div className="usage-stats">
+                    <span className="usage-label">Usage:</span>
+                    <span className="usage-value">
+                      {usage.count.toLocaleString()} /{' '}
+                      {usage.limit.toLocaleString()} chars ({usage.percentage}%)
+                    </span>
+                  </div>
+                  <div className="usage-bar">
+                    <div
+                      className="usage-bar-fill"
+                      style={{ width: `${usage.percentage}%` }}
+                    />
+                  </div>
+                  <div className="usage-remaining">
+                    <span>
+                      {usage.remaining.toLocaleString()} characters remaining
+                    </span>
+                    <button
+                      onClick={fetchUsage}
+                      disabled={fetchingUsage || !config.authKey}
+                      className="refresh-usage"
+                    >
+                      {fetchingUsage ? '⟳' : '↻'}
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <div className="usage-prompt">
+                  <span>Click to check your DeepL quota</span>
+                  <button
+                    onClick={fetchUsage}
+                    disabled={fetchingUsage || !config.authKey}
+                    className="refresh-usage"
+                  >
+                    {fetchingUsage ? '⟳' : '↻'}
+                  </button>
+                </div>
+              )}
             </div>
           </div>
 
@@ -207,6 +290,8 @@ function ConfigPanel({ config, setConfig }: ConfigPanelProps) {
             <input
               type="number"
               value={config.chunkThreshold}
+              min={1}
+              max={100000}
               onChange={e =>
                 setConfig({
                   ...config,

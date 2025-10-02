@@ -4,9 +4,11 @@ import * as deepl from 'deepl-node';
 import { constants } from './constants.js';
 import { fileExists, sanitizePageTitle } from './utils.js';
 
-const translator = new deepl.Translator(constants.AUTH_KEY || '');
+const translator = new deepl.DeepLClient(constants.AUTH_KEY || '');
 
-export async function wikiTranslate() {
+export async function wikiTranslate(options: { dryRun?: boolean } = {}) {
+  const { dryRun = false } = options;
+
   if (!constants.AUTH_KEY) {
     throw new Error(
       'AUTH_KEY is missing. Please add your DeepL API key to the .env file.'
@@ -37,8 +39,8 @@ export async function wikiTranslate() {
 
       await saveOriginalArticle(pageTitle, pageContent);
 
-      // If NO_TRANSLATE is true, skip the translation step
-      if (!constants.NO_TRANSLATE) {
+      // If dry-run mode is enabled, skip the translation step
+      if (!dryRun) {
         const translatedPageContent = await translateArticle(pageContent);
         await saveTranslatedArticle(pageTitle, translatedPageContent);
       }
@@ -56,7 +58,9 @@ export async function wikiTranslate() {
   );
 }
 
-async function getArticleContent(articleTitle: string): Promise<[string, string]> {
+async function getArticleContent(
+  articleTitle: string
+): Promise<[string, string]> {
   const params = {
     action: 'parse',
     prop: 'wikitext',
@@ -78,7 +82,10 @@ async function getArticleContent(articleTitle: string): Promise<[string, string]
   return [pageTitle, pageContent];
 }
 
-async function saveOriginalArticle(pageTitle: string, pageContent: string): Promise<void> {
+async function saveOriginalArticle(
+  pageTitle: string,
+  pageContent: string
+): Promise<void> {
   const fileName = `${pageTitle}[ORIGINAL].txt`;
   console.log(`${constants.OUTPUT_FOLDER}/${fileName}`);
 
@@ -88,7 +95,9 @@ async function saveOriginalArticle(pageTitle: string, pageContent: string): Prom
   console.log(`File: ${fileName} saved`);
 }
 
-async function translateArticle(pageContent: string): Promise<deepl.TextResult> {
+async function translateArticle(
+  pageContent: string
+): Promise<deepl.TextResult> {
   if (pageContent.length > constants.SPLIT_TRESHOLD) {
     let translatedContent = '';
 
@@ -131,10 +140,16 @@ async function translateArticle(pageContent: string): Promise<deepl.TextResult> 
   return Array.isArray(result) ? result[0] : result;
 }
 
-async function saveTranslatedArticle(pageTitle: string, pageContent: deepl.TextResult): Promise<void> {
+async function saveTranslatedArticle(
+  pageTitle: string,
+  pageContent: deepl.TextResult
+): Promise<void> {
   const fileName = `${pageTitle}.txt`;
 
   // Save the TRANSLATED version of the page content
-  await fs.writeFile(`${constants.OUTPUT_FOLDER}/${fileName}`, pageContent.text);
+  await fs.writeFile(
+    `${constants.OUTPUT_FOLDER}/${fileName}`,
+    pageContent.text
+  );
   console.log(`File: ${fileName} saved.`);
 }

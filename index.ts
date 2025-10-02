@@ -1,6 +1,7 @@
 import { wikiTranslate } from './wikiTranslate.js';
 import { getArticles } from './input/getArticles.js';
 import { createGlossary } from './glossary/createGlossary.js';
+import { logger } from './logger.js';
 
 const cliArguments = process.argv.slice(2);
 
@@ -15,7 +16,7 @@ if (cliArguments.length) {
   const flags = cliArguments.slice(1);
 
   if (!Object.keys(commandsList).includes(command)) {
-    console.log(
+    logger.error(
       `ERROR: Invalid command! Use one of: ${Object.keys(commandsList).join(' | ')}`
     );
     process.exit();
@@ -23,7 +24,7 @@ if (cliArguments.length) {
 
   commandsList[command](flags);
 } else {
-  console.log(
+  logger.error(
     `ERROR: Please input a command: ${Object.keys(commandsList).join(' | ')}`
   );
 }

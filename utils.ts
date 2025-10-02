@@ -1,6 +1,7 @@
 import * as fs from 'fs/promises';
 import filenamify from 'filenamify';
 import { constants } from './constants.js';
+import { logger } from './logger.js';
 
 export function validateConfig(): void {
   if (!constants.AUTH_KEY) {
@@ -23,7 +24,7 @@ export async function fileExists(pageTitle: string): Promise<boolean> {
 
     if (existingFiles.length > 0) {
       existingFiles.forEach(file => {
-        console.log(`File: ${file} already exists.`);
+        logger.info(`File: ${file} already exists.`);
       });
       return true;
     }

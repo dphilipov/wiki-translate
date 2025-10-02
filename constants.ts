@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import type { WikiArticle } from './types';
 import { extractWikiName } from './utils.js';
+import { logger } from './logger.js';
 dotenv.config();
 
 const TRANSLATE_ARTICLE_START = 0; // Start translating from this article index
@@ -18,7 +19,7 @@ function loadArticles(): WikiArticle[] {
     const articlesData = fs.readFileSync(articlesPath, 'utf-8');
     return JSON.parse(articlesData);
   } catch (error) {
-    console.warn(`Could not load ${articlesPath}, returning empty array`);
+    logger.warn(`Could not load ${articlesPath}, returning empty array`);
     return [];
   }
 }

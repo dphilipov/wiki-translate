@@ -4,6 +4,7 @@ import * as path from 'path';
 import { constants } from '../constants.js';
 import { extractWikiName } from '../utils.js';
 import type { WikiArticle, MediaWikiAllPagesResponse } from '../types';
+import { logger } from '../logger.js';
 
 export async function getArticles(): Promise<void> {
   let queryContinue = '';
@@ -43,5 +44,5 @@ export async function getArticles(): Promise<void> {
 
   await fs.writeFile(filename, JSON.stringify(data));
 
-  console.log(`${data.length} articles saved to ${filename}`);
+  logger.info(`${data.length} articles saved to ${filename}`);
 }

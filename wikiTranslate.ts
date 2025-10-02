@@ -5,6 +5,7 @@ import * as deepl from 'deepl-node';
 import { constants } from './constants.js';
 import { fileExists, sanitizePageTitle, validateConfig } from './utils.js';
 import type { MediaWikiParseResponse } from './types';
+import { logger } from './logger.js';
 
 let translator: deepl.DeepLClient;
 
@@ -48,11 +49,11 @@ export async function wikiTranslate(options: { dryRun?: boolean } = {}) {
     } catch (err) {
       errorCount++;
       const message = err instanceof Error ? err.message : String(err);
-      console.error(`Error processing article "${articleTitle}":`, message);
+      logger.error(`Error processing article "${articleTitle}":`, message);
     }
   }
 
-  console.log(
+  logger.info(
     `\nTranslation complete: ${successCount} succeeded, ${errorCount} failed`
   );
 }
@@ -87,12 +88,25 @@ async function saveOriginalArticle(
 ): Promise<void> {
   const fileName = `${pageTitle}[ORIGINAL].txt`;
   const filePath = path.join(constants.OUTPUT_FOLDER, fileName);
-  console.log(filePath);
+  logger.info(filePath);
 
   // Save the ORIGINAL version of the page content
   await fs.writeFile(filePath, pageContent);
 
-  console.log(`File: ${fileName} saved`);
+  logger.info(`File: ${fileName} saved`);
+}
+
+async function callDeepLAPI(text: string): Promise<string> {
+  const result = await translator.translateText(
+    text,
+    constants.TRANSLATE_FROM_LANGUAGE as deepl.SourceLanguageCode,
+    constants.TRANSLATE_TO_LANGUAGE as deepl.TargetLanguageCode,
+    {
+      glossary: constants.GLOSSARY_ID,
+    }
+  );
+
+  return Array.isArray(result) ? result[0].text : result.text;
 }
 
 async function translateArticle(
@@ -108,18 +122,10 @@ async function translateArticle(
       );
 
       try {
-        const result = await translator.translateText(
-          pageContentChunk,
-          constants.TRANSLATE_FROM_LANGUAGE as deepl.SourceLanguageCode,
-          constants.TRANSLATE_TO_LANGUAGE as deepl.TargetLanguageCode,
-          {
-            glossary: constants.GLOSSARY_ID,
-          }
-        );
-        const text = Array.isArray(result) ? result[0].text : result.text;
+        const text = await callDeepLAPI(pageContentChunk);
         translatedContent += text;
       } catch (e) {
-        console.log(e);
+        logger.error('Translation chunk error:', e);
         const message = e instanceof Error ? e.message : String(e);
         throw new Error(`Translation failed at chunk ${i}: ${message}`);
       }
@@ -128,16 +134,8 @@ async function translateArticle(
     return { text: translatedContent } as deepl.TextResult;
   }
 
-  const result = await translator.translateText(
-    pageContent,
-    constants.TRANSLATE_FROM_LANGUAGE as deepl.SourceLanguageCode,
-    constants.TRANSLATE_TO_LANGUAGE as deepl.TargetLanguageCode,
-    {
-      glossary: constants.GLOSSARY_ID,
-    }
-  );
-
-  return Array.isArray(result) ? result[0] : result;
+  const text = await callDeepLAPI(pageContent);
+  return { text } as deepl.TextResult;
 }
 
 async function saveTranslatedArticle(
@@ -149,5 +147,5 @@ async function saveTranslatedArticle(
 
   // Save the TRANSLATED version of the page content
   await fs.writeFile(filePath, pageContent.text);
-  console.log(`File: ${fileName} saved.`);
+  logger.info(`File: ${fileName} saved.`);
 }

@@ -47,7 +47,7 @@ function GlossaryManager({ authKey }: GlossaryManagerProps) {
       const response = await fetch('/api/glossary/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ authKey })
+        body: JSON.stringify({ authKey }),
       });
 
       const data = await response.json();
@@ -71,8 +71,9 @@ function GlossaryManager({ authKey }: GlossaryManagerProps) {
 
       <div className="glossary-info">
         <p>
-          The glossary contains {terms.length} term(s) that will be used for consistent translation
-          of specific terminology. Terms must be uploaded to DeepL before use.
+          The glossary contains {terms.length} term(s) that will be used for
+          consistent translation of specific terminology. Terms must be uploaded
+          to DeepL before use.
         </p>
       </div>
 
@@ -113,8 +114,9 @@ function GlossaryManager({ authKey }: GlossaryManagerProps) {
       )}
 
       <div className="glossary-note">
-        <strong>Note:</strong> To add or edit glossary terms, modify the <code>glossary/glossary.js</code> file
-        in the project directory, then click "Create/Update DeepL Glossary" to sync with DeepL.
+        <strong>Note:</strong> To add or edit glossary terms, modify the{' '}
+        <code>glossary/glossary.ts</code> file in the project directory, then
+        click "Create/Update DeepL Glossary" to sync with DeepL.
       </div>
     </div>
   );

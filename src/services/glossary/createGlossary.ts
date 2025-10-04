@@ -1,13 +1,16 @@
 import * as deepl from 'deepl-node';
 import { constants } from '../../lib/constants';
 import { glossary } from './glossary';
-import { validateConfig } from '../../lib/utils';
 import { logger } from '../../lib/logger';
 
-export async function createGlossary() {
-  validateConfig();
+export async function createGlossary(authKey?: string) {
+  const apiKey = authKey || constants.AUTH_KEY;
 
-  const translator = new deepl.DeepLClient(constants.AUTH_KEY!);
+  if (!apiKey) {
+    throw new Error('DeepL API key is required');
+  }
+
+  const translator = new deepl.DeepLClient(apiKey);
   const entries = new deepl.GlossaryEntries({
     entries: glossary,
   });
@@ -20,4 +23,5 @@ export async function createGlossary() {
   );
 
   logger.info(glossaryDEtoEN.glossaryId);
+  return glossaryDEtoEN;
 }

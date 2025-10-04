@@ -1,12 +1,15 @@
 import express, { Request, Response } from 'express';
 import { createGlossary } from '../../src/services/glossary/createGlossary';
-import { glossary } from '../../src/services/glossary/glossary';
 import type { CreateGlossaryRequest } from '../types';
 
 const router = express.Router();
 
 // GET /api/glossary - Get glossary terms
-router.get('/', (req: Request, res: Response) => {
+router.get('/', async (_req: Request, res: Response) => {
+  // Dynamically import with cache-busting to get latest glossary
+  const glossaryModule = await import(`../../src/services/glossary/glossary?update=${Date.now()}`);
+  const glossary = glossaryModule.glossary;
+
   // Convert glossary object to array format for frontend
   const terms = Object.entries(glossary).map(([source, target]) => ({
     source,

@@ -3,7 +3,7 @@
 .translation-progress {
   background: $surface;
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: $shadow;
 
   h2 {
@@ -12,8 +12,6 @@
   }
 
   .progress-controls {
-    margin-bottom: 1.5rem;
-
     button {
       width: 100%;
       padding: 0.75rem;

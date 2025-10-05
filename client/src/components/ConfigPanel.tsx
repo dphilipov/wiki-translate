@@ -41,7 +41,6 @@ interface UsageData {
 function ConfigPanel({ config, setConfig }: ConfigPanelProps) {
   const [apiKeyValid, setApiKeyValid] = useState<boolean | null>(null);
   const [validating, setValidating] = useState(false);
-  const [isCollapsed, setIsCollapsed] = useState(false);
   const [usage, setUsage] = useState<UsageData | null>(null);
   const [fetchingUsage, setFetchingUsage] = useState(false);
 
@@ -117,17 +116,9 @@ function ConfigPanel({ config, setConfig }: ConfigPanelProps) {
 
   return (
     <div className="config-panel">
-      <div className="config-panel-header">
-        <h2>Configuration</h2>
-        <button
-          className="collapse-btn"
-          onClick={() => setIsCollapsed(!isCollapsed)}
-        >
-          {isCollapsed ? '▼' : '▲'}
-        </button>
-      </div>
+      <h2>Configuration</h2>
 
-      <div className={`config-grid ${isCollapsed ? 'collapsed' : 'expanded'}`}>
+      <div className="config-grid">
         <div className="config-section">
           <h3>Wiki Settings</h3>
 

@@ -8,34 +8,9 @@
   box-shadow: $shadow;
   width: calc(50% - 10px);
 
-  .config-panel-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  h2 {
+    font-size: 1.25rem;
     margin-bottom: 1.5rem;
-
-    h2 {
-      font-size: 1.25rem;
-      margin-bottom: 0;
-    }
-
-    .collapse-btn {
-      background: transparent;
-      color: $text-secondary;
-      padding: 0.5rem;
-      font-size: 1rem;
-      border-radius: 0.25rem;
-      cursor: pointer;
-      transition: ease 0.2s;
-      border: none;
-      width: 35px;
-
-      &:hover {
-        color: $text-primary;
-        background: $background;
-        border-color: $text-secondary;
-      }
-    }
   }
 
   h3 {
@@ -47,21 +22,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-height: 2000px;
-    opacity: 1;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
-    &.collapsed {
-      max-height: 0;
-      opacity: 0;
-      margin-bottom: 0;
-    }
-
-    &.expanded {
-      max-height: 2000px;
-      opacity: 1;
-    }
   }
 
   .config-section {

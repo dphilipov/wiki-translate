@@ -23,11 +23,6 @@ function ArticleSelection({
   const [rangeEnd, setRangeEnd] = useState(100);
   const [selectionMode, setSelectionMode] = useState<SelectionMode>('fetch');
 
-  useEffect(() => {
-    // Load cached articles on mount
-    loadCachedArticles();
-  }, []);
-
   const loadCachedArticles = async () => {
     try {
       const params = new URLSearchParams({
@@ -43,6 +38,12 @@ function ArticleSelection({
       console.error('Error loading cached articles:', error);
     }
   };
+
+  useEffect(() => {
+    // Load cached articles on mount and when config changes
+    loadCachedArticles();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [config.wikiUrl, config.outputFolder]);
 
   const fetchArticles = async () => {
     if (!config.wikiUrl) {

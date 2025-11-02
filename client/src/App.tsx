@@ -47,10 +47,10 @@ function App() {
     'translate' | 'results' | 'glossary'
   >('translate');
 
-  // Save config to localStorage whenever it changes
   useEffect(() => {
     try {
-      localStorage.setItem(CONFIG_STORAGE_KEY, JSON.stringify(config));
+      const { authKey, ...configWithoutAuthKey } = config;
+      localStorage.setItem(CONFIG_STORAGE_KEY, JSON.stringify(configWithoutAuthKey));
     } catch (error) {
       console.error('Failed to save config to localStorage:', error);
     }

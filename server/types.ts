@@ -24,6 +24,7 @@ export interface ValidateKeyRequest extends Request {
 export interface FetchArticlesRequest extends Request {
   body: {
     wikiUrl: string;
+    outputFolder?: string;
   };
 }
 

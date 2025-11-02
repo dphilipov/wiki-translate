@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ConfigPanel from './components/ConfigPanel';
@@ -9,18 +9,35 @@ import GlossaryManager from './components/GlossaryManager';
 import type { Config, TranslationResult } from './types';
 import './App.scss';
 
+const CONFIG_STORAGE_KEY = 'wiki-translate-config';
+
+const DEFAULT_CONFIG: Config = {
+  wikiUrl: 'https://shadowhelix.de/api.php',
+  sourceLang: 'DE',
+  targetLang: 'EN-US',
+  authKey: '',
+  outputFolder: 'output',
+  chunkThreshold: 50000,
+  allowOverwrite: false,
+  dryRun: false,
+  useGlossary: true,
+};
+
+function loadConfigFromStorage(): Config {
+  try {
+    const stored = localStorage.getItem(CONFIG_STORAGE_KEY);
+    if (stored) {
+      const parsed = JSON.parse(stored);
+      return { ...DEFAULT_CONFIG, ...parsed };
+    }
+  } catch (error) {
+    console.error('Failed to load config from localStorage:', error);
+  }
+  return DEFAULT_CONFIG;
+}
+
 function App() {
-  const [config, setConfig] = useState<Config>({
-    wikiUrl: 'https://shadowhelix.de/api.php',
-    sourceLang: 'DE',
-    targetLang: 'EN-US',
-    authKey: '',
-    outputFolder: 'output',
-    chunkThreshold: 50000,
-    allowOverwrite: false,
-    dryRun: false,
-    useGlossary: true,
-  });
+  const [config, setConfig] = useState<Config>(loadConfigFromStorage);
 
   const [selectedArticles, setSelectedArticles] = useState<string[]>([]);
   const [isTranslating, setIsTranslating] = useState<boolean>(false);
@@ -29,6 +46,15 @@ function App() {
   const [activeTab, setActiveTab] = useState<
     'translate' | 'results' | 'glossary'
   >('translate');
+
+  // Save config to localStorage whenever it changes
+  useEffect(() => {
+    try {
+      localStorage.setItem(CONFIG_STORAGE_KEY, JSON.stringify(config));
+    } catch (error) {
+      console.error('Failed to save config to localStorage:', error);
+    }
+  }, [config]);
 
   return (
     <div className="app">

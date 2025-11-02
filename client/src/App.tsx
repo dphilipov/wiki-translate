@@ -19,14 +19,16 @@ function App() {
     chunkThreshold: 50000,
     allowOverwrite: false,
     dryRun: false,
-    useGlossary: false,
+    useGlossary: true,
   });
 
-  const [articles, setArticles] = useState<string[]>([]);
   const [selectedArticles, setSelectedArticles] = useState<string[]>([]);
   const [isTranslating, setIsTranslating] = useState<boolean>(false);
-  const [translationResults, setTranslationResults] = useState<TranslationResult | null>(null);
-  const [activeTab, setActiveTab] = useState<'translate' | 'results' | 'glossary'>('translate');
+  const [translationResults, setTranslationResults] =
+    useState<TranslationResult | null>(null);
+  const [activeTab, setActiveTab] = useState<
+    'translate' | 'results' | 'glossary'
+  >('translate');
 
   return (
     <div className="app">
@@ -72,8 +74,6 @@ function App() {
 
               <ArticleSelection
                 config={config}
-                articles={articles}
-                setArticles={setArticles}
                 selectedArticles={selectedArticles}
                 setSelectedArticles={setSelectedArticles}
               />

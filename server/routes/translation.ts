@@ -31,7 +31,7 @@ router.post('/start', async (req: TranslationStartRequest, res: Response) => {
     allowOverwrite,
     outputFolder,
     chunkThreshold,
-    useGlossary
+    useGlossary,
   } = req.body;
 
   if (!articles || articles.length === 0) {
@@ -39,7 +39,9 @@ router.post('/start', async (req: TranslationStartRequest, res: Response) => {
   }
 
   if (!dryRun && !authKey) {
-    return res.status(400).json({ error: 'DeepL API key is required for translation' });
+    return res
+      .status(400)
+      .json({ error: 'DeepL API key is required for translation' });
   }
 
   if (!wikiUrl) {
@@ -55,24 +57,24 @@ router.post('/start', async (req: TranslationStartRequest, res: Response) => {
   res.writeHead(200, {
     'Content-Type': 'text/event-stream',
     'Cache-Control': 'no-cache',
-    'Connection': 'keep-alive'
+    Connection: 'keep-alive',
   });
 
   // Send session ID
   res.write(`data: ${JSON.stringify({ type: 'session', sessionId })}\n\n`);
 
   // Listen to events and stream to client
-  emitter.on('progress', (data) => {
+  emitter.on('progress', data => {
     res.write(`data: ${JSON.stringify({ type: 'progress', ...data })}\n\n`);
   });
 
-  emitter.on('complete', (data) => {
+  emitter.on('complete', data => {
     res.write(`data: ${JSON.stringify({ type: 'complete', ...data })}\n\n`);
     res.end();
     activeSessions.delete(sessionId);
   });
 
-  emitter.on('error', (data) => {
+  emitter.on('error', data => {
     res.write(`data: ${JSON.stringify({ type: 'error', ...data })}\n\n`);
   });
 
@@ -80,16 +82,19 @@ router.post('/start', async (req: TranslationStartRequest, res: Response) => {
   translateArticles({
     articles,
     authKey,
-    sourceLang: sourceLang || constants.SOURCE_LANG,
-    targetLang: targetLang || constants.TARGET_LANG,
+    sourceLang: sourceLang,
+    targetLang: targetLang,
     wikiUrl,
     dryRun: dryRun || false,
-    allowOverwrite: allowOverwrite !== undefined ? allowOverwrite : constants.ALLOW_FILE_OVERWRITE,
+    allowOverwrite:
+      allowOverwrite !== undefined
+        ? allowOverwrite
+        : constants.ALLOW_FILE_OVERWRITE,
     outputFolder: outputFolder || constants.OUTPUT_FOLDER,
     chunkThreshold: chunkThreshold || constants.SPLIT_TRESHOLD,
     useGlossary: useGlossary || false,
     emitter,
-    sessionId
+    sessionId,
   });
 });
 
@@ -121,7 +126,7 @@ async function translateArticles(config) {
     chunkThreshold,
     useGlossary,
     emitter,
-    sessionId
+    sessionId,
   } = config;
 
   let successCount = 0;
@@ -135,7 +140,7 @@ async function translateArticles(config) {
         successCount,
         errorCount,
         results,
-        stopped: true
+        stopped: true,
       });
       return;
     }
@@ -147,7 +152,7 @@ async function translateArticles(config) {
         current: i + 1,
         total: articles.length,
         articleTitle,
-        status: 'fetching'
+        status: 'fetching',
       });
 
       // Fetch article content
@@ -158,8 +163,8 @@ async function translateArticles(config) {
           prop: 'wikitext',
           formatversion: 2,
           format: 'json',
-          redirects: 1
-        }
+          redirects: 1,
+        },
       });
 
       const json = response.data;
@@ -176,8 +181,14 @@ async function translateArticles(config) {
       }
 
       const sanitizedFilename = sanitizePageTitle(pageTitle);
-      const originalFilePath = path.join(outputFolder, `${sanitizedFilename}[ORIGINAL].txt`);
-      const translatedFilePath = path.join(outputFolder, `${sanitizedFilename}.txt`);
+      const originalFilePath = path.join(
+        outputFolder,
+        `${sanitizedFilename}[ORIGINAL].txt`
+      );
+      const translatedFilePath = path.join(
+        outputFolder,
+        `${sanitizedFilename}.txt`
+      );
 
       // Check if files exist
       const originalExists = await fileExists(originalFilePath);
@@ -189,9 +200,13 @@ async function translateArticles(config) {
           total: articles.length,
           articleTitle,
           status: 'skipped',
-          message: 'File already exists'
+          message: 'File already exists',
         });
-        results.push({ title: articleTitle, status: 'skipped', reason: 'File already exists' });
+        results.push({
+          title: articleTitle,
+          status: 'skipped',
+          reason: 'File already exists',
+        });
         continue;
       }
 
@@ -205,7 +220,7 @@ async function translateArticles(config) {
           total: articles.length,
           articleTitle,
           status: 'success',
-          message: 'Saved original (dry-run)'
+          message: 'Saved original (dry-run)',
         });
         successCount++;
         results.push({ title: articleTitle, status: 'success', dryRun: true });
@@ -217,7 +232,7 @@ async function translateArticles(config) {
         current: i + 1,
         total: articles.length,
         articleTitle,
-        status: 'translating'
+        status: 'translating',
       });
 
       let translatedContent;
@@ -236,7 +251,7 @@ async function translateArticles(config) {
             authKey,
             sourceLang,
             targetLang,
-            useGlossary
+            useGlossary,
           });
           translatedChunks.push(translated);
         }
@@ -247,7 +262,7 @@ async function translateArticles(config) {
           authKey,
           sourceLang,
           targetLang,
-          useGlossary
+          useGlossary,
         });
       }
 
@@ -258,34 +273,37 @@ async function translateArticles(config) {
         current: i + 1,
         total: articles.length,
         articleTitle,
-        status: 'success'
+        status: 'success',
       });
 
       successCount++;
       results.push({ title: articleTitle, status: 'success' });
-
     } catch (error) {
       errorCount++;
       const errorMessage = (error as Error).message;
       emitter.emit('error', {
         articleTitle,
-        error: errorMessage
+        error: errorMessage,
       });
       emitter.emit('progress', {
         current: i + 1,
         total: articles.length,
         articleTitle,
         status: 'error',
-        message: errorMessage
+        message: errorMessage,
       });
-      results.push({ title: articleTitle, status: 'error', error: errorMessage });
+      results.push({
+        title: articleTitle,
+        status: 'error',
+        error: errorMessage,
+      });
     }
   }
 
   emitter.emit('complete', {
     successCount,
     errorCount,
-    results
+    results,
   });
 }
 
@@ -304,7 +322,7 @@ router.post('/validate-key', async (req: ValidateKeyRequest, res: Response) => {
       authKey,
       sourceLang: 'DE',
       targetLang: 'EN-US',
-      useGlossary: false
+      useGlossary: false,
     });
 
     res.json({ valid: true });
@@ -329,8 +347,9 @@ router.post('/usage', async (req: Request, res: Response) => {
       count: usage.character?.count || 0,
       limit: usage.character?.limit || 0,
       remaining: (usage.character?.limit || 0) - (usage.character?.count || 0),
-      percentage: usage.character ?
-        ((usage.character.count / usage.character.limit) * 100).toFixed(2) : '0'
+      percentage: usage.character
+        ? ((usage.character.count / usage.character.limit) * 100).toFixed(2)
+        : '0',
     });
   } catch (error) {
     res.status(500).json({ error: (error as Error).message });

@@ -13,7 +13,7 @@ function App() {
   const [config, setConfig] = useState<Config>({
     wikiUrl: 'https://shadowhelix.de/api.php',
     sourceLang: 'DE',
-    targetLang: 'EN',
+    targetLang: 'EN-US',
     authKey: '',
     outputFolder: 'output',
     chunkThreshold: 50000,

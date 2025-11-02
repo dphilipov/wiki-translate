@@ -76,12 +76,31 @@
         background: $background;
       }
 
+      &.translated {
+        background: rgba(46, 160, 67, 0.1);
+        border-left: 3px solid #2ea043;
+
+        &:hover {
+          background: rgba(46, 160, 67, 0.15);
+        }
+      }
+
       input[type='checkbox'] {
         width: auto;
       }
 
       span {
         flex: 1;
+      }
+
+      .translated-badge {
+        flex: 0;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+        background: #2ea043;
+        color: white;
+        border-radius: 0.25rem;
+        font-weight: 500;
       }
     }
   }

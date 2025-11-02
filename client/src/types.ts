@@ -10,6 +10,11 @@ export interface Config {
   useGlossary: boolean;
 }
 
+export interface Article {
+  title: string;
+  isTranslated: boolean;
+}
+
 export interface TranslationResult {
   successCount: number;
   errorCount: number;

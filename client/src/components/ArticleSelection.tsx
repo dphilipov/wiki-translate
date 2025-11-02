@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import type { Config } from '../types';
+import type { Config, Article } from '../types';
 import './ArticleSelection.scss';
 
 interface ArticleSelectionProps {
   config: Config;
-  articles: string[];
-  setArticles: (articles: string[]) => void;
   selectedArticles: string[];
   setSelectedArticles: (articles: string[]) => void;
 }
@@ -14,11 +12,10 @@ type SelectionMode = 'fetch' | 'manual' | 'range';
 
 function ArticleSelection({
   config,
-  articles,
-  setArticles,
   selectedArticles,
   setSelectedArticles
 }: ArticleSelectionProps) {
+  const [articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(false);
   const [manualInput, setManualInput] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
@@ -33,7 +30,11 @@ function ArticleSelection({
 
   const loadCachedArticles = async () => {
     try {
-      const response = await fetch('/api/wiki/articles');
+      const params = new URLSearchParams({
+        wikiUrl: config.wikiUrl,
+        outputFolder: config.outputFolder
+      });
+      const response = await fetch(`/api/wiki/articles?${params}`);
       const data = await response.json();
       if (data.articles && data.articles.length > 0) {
         setArticles(data.articles);
@@ -54,7 +55,10 @@ function ArticleSelection({
       const response = await fetch('/api/wiki/fetch-articles', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ wikiUrl: config.wikiUrl })
+        body: JSON.stringify({
+          wikiUrl: config.wikiUrl,
+          outputFolder: config.outputFolder
+        })
       });
 
       const data = await response.json();
@@ -75,7 +79,7 @@ function ArticleSelection({
 
   const handleSelectAll = () => {
     const filtered = getFilteredArticles();
-    setSelectedArticles(filtered);
+    setSelectedArticles(filtered.map(a => a.title));
   };
 
   const handleDeselectAll = () => {
@@ -103,13 +107,13 @@ function ArticleSelection({
     const start = Math.max(0, rangeStart);
     const end = Math.min(articles.length, rangeEnd);
     const rangeArticles = articles.slice(start, end);
-    setSelectedArticles(rangeArticles);
+    setSelectedArticles(rangeArticles.map(a => a.title));
   };
 
   const getFilteredArticles = () => {
     if (!searchTerm) return articles;
     return articles.filter(article =>
-      article.toLowerCase().includes(searchTerm.toLowerCase())
+      article.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
   };
 
@@ -165,13 +169,17 @@ function ArticleSelection({
 
               <div className="article-list">
                 {filteredArticles.map((article, index) => (
-                  <label key={index} className="article-item">
+                  <label
+                    key={index}
+                    className={`article-item ${article.isTranslated ? 'translated' : ''}`}
+                  >
                     <input
                       type="checkbox"
-                      checked={selectedArticles.includes(article)}
-                      onChange={() => handleToggleArticle(article)}
+                      checked={selectedArticles.includes(article.title)}
+                      onChange={() => handleToggleArticle(article.title)}
                     />
-                    <span>{article}</span>
+                    <span>{article.title}</span>
+                    {article.isTranslated && <span className="translated-badge">Translated</span>}
                   </label>
                 ))}
               </div>
